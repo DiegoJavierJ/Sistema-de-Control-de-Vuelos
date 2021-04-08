@@ -8,25 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\dell\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\diego\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dell\\Desktop\\ProyectoFinalDB\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj",
+      "projectUniqueName": "C:\\Users\\diego\\OneDrive\\Desktop\\ProyectoFinal\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj",
       "projectName": "SisControlVuelo",
-      "projectPath": "C:\\Users\\dell\\Desktop\\ProyectoFinalDB\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj",
-      "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dell\\Desktop\\ProyectoFinalDB\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\obj\\",
+      "projectPath": "C:\\Users\\diego\\OneDrive\\Desktop\\ProyectoFinal\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj",
+      "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\diego\\OneDrive\\Desktop\\ProyectoFinal\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -70,8 +68,16 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\diego\\OneDrive\\Desktop\\ProyectoFinal\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
