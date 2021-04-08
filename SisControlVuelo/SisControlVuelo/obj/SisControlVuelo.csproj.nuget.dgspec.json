@@ -1,29 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\axell\\RiderProjects\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj": {}
+    "C:\\Users\\diego\\OneDrive\\Desktop\\ProyectoFinal\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\axell\\RiderProjects\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj": {
+    "C:\\Users\\diego\\OneDrive\\Desktop\\ProyectoFinal\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\axell\\RiderProjects\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj",
+        "projectUniqueName": "C:\\Users\\diego\\OneDrive\\Desktop\\ProyectoFinal\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj",
         "projectName": "SisControlVuelo",
-        "projectPath": "C:\\Users\\axell\\RiderProjects\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj",
-        "packagesPath": "C:\\Users\\axell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\axell\\RiderProjects\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\obj\\",
+        "projectPath": "C:\\Users\\diego\\OneDrive\\Desktop\\ProyectoFinal\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj",
+        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\diego\\OneDrive\\Desktop\\ProyectoFinal\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\axell\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -35,6 +42,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -53,7 +61,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

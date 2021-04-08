@@ -8,16 +8,11 @@ using System.Windows.Forms;
 
 namespace SisControlVuelo
 {
-    public partial class HistorialVueloPage : Form
+    public partial class AddAirlinePage : Form
     {
-        public HistorialVueloPage()
+        public AddAirlinePage()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

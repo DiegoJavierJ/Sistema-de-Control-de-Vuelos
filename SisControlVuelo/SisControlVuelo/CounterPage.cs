@@ -42,7 +42,9 @@ namespace SisControlVuelo
 
         private void btn_HistorialVuelo_Click(object sender, EventArgs e)
         {
-
+            HistorialVueloPage frm = new HistorialVueloPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.Panel_InfoSCV.Controls.Add(frm);
+            frm.Show();
         }
 
         private void btn_RemoverVuelo_Click(object sender, EventArgs e)
@@ -63,6 +65,18 @@ namespace SisControlVuelo
         private void btn_CambiarCuenta_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Panel_InfoSCV_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_AgregarAerolinea_Click(object sender, EventArgs e)
+        {
+            AddAirlinePage frm = new AddAirlinePage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.Panel_InfoSCV.Controls.Add(frm);
+            frm.Show();
         }
     }
 }

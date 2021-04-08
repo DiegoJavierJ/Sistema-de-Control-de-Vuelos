@@ -38,9 +38,9 @@ namespace SisControlVuelo
             this.btn_HistorialVuelo = new System.Windows.Forms.Button();
             this.btn_AgregarVuelo = new System.Windows.Forms.Button();
             this.Panel_Botones = new System.Windows.Forms.Panel();
-            this.btn_CambiarCuenta = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.btn_AgregarAerolinea = new System.Windows.Forms.Button();
+            this.btn_CambiarCuenta = new System.Windows.Forms.Button();
+            this.Panel_InfoSCV = new System.Windows.Forms.Panel();
             this.Panel_Titulo.SuspendLayout();
             this.Panel_Botones.SuspendLayout();
             this.SuspendLayout();
@@ -146,6 +146,17 @@ namespace SisControlVuelo
             this.Panel_Botones.Size = new System.Drawing.Size(214, 366);
             this.Panel_Botones.TabIndex = 9;
             // 
+            // btn_AgregarAerolinea
+            // 
+            this.btn_AgregarAerolinea.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_AgregarAerolinea.Location = new System.Drawing.Point(12, 268);
+            this.btn_AgregarAerolinea.Name = "btn_AgregarAerolinea";
+            this.btn_AgregarAerolinea.Size = new System.Drawing.Size(189, 23);
+            this.btn_AgregarAerolinea.TabIndex = 11;
+            this.btn_AgregarAerolinea.Text = "Agregar Aerolinea";
+            this.btn_AgregarAerolinea.UseVisualStyleBackColor = true;
+            this.btn_AgregarAerolinea.Click += new System.EventHandler(this.btn_AgregarAerolinea_Click);
+            // 
             // btn_CambiarCuenta
             // 
             this.btn_CambiarCuenta.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -157,32 +168,22 @@ namespace SisControlVuelo
             this.btn_CambiarCuenta.UseVisualStyleBackColor = true;
             this.btn_CambiarCuenta.Click += new System.EventHandler(this.btn_CambiarCuenta_Click);
             // 
-            // label1
+            // Panel_InfoSCV
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(374, 191);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 15);
-            this.label1.TabIndex = 10;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // btn_AgregarAerolinea
-            // 
-            this.btn_AgregarAerolinea.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_AgregarAerolinea.Location = new System.Drawing.Point(12, 268);
-            this.btn_AgregarAerolinea.Name = "btn_AgregarAerolinea";
-            this.btn_AgregarAerolinea.Size = new System.Drawing.Size(189, 23);
-            this.btn_AgregarAerolinea.TabIndex = 11;
-            this.btn_AgregarAerolinea.Text = "Agregar Aerolinea";
-            this.btn_AgregarAerolinea.UseVisualStyleBackColor = true;
+            this.Panel_InfoSCV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Panel_InfoSCV.Location = new System.Drawing.Point(214, 84);
+            this.Panel_InfoSCV.Name = "Panel_InfoSCV";
+            this.Panel_InfoSCV.Size = new System.Drawing.Size(600, 366);
+            this.Panel_InfoSCV.TabIndex = 10;
+            this.Panel_InfoSCV.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_InfoSCV_Paint);
             // 
             // CounterPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(814, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Panel_InfoSCV);
             this.Controls.Add(this.Panel_Botones);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.Panel_Titulo);
@@ -193,7 +194,6 @@ namespace SisControlVuelo
             this.Panel_Titulo.PerformLayout();
             this.Panel_Botones.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -205,10 +205,10 @@ namespace SisControlVuelo
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button btn_AgregarVuelo;
         private System.Windows.Forms.Panel Panel_Botones;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Label_SisContorlVuelos;
         private System.Windows.Forms.Label Label_SCV;
         private System.Windows.Forms.Button btn_CambiarCuenta;
         private System.Windows.Forms.Button btn_AgregarAerolinea;
+        private System.Windows.Forms.Panel Panel_InfoSCV;
     }
 }
