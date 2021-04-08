@@ -39,5 +39,30 @@ namespace SisControlVuelo
         {
 
         }
+
+        private void btn_HistorialVuelo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_RemoverVuelo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_AgregarVuelo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_ModificarVuelo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_CambiarCuenta_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
