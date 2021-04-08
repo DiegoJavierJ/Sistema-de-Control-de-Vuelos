@@ -16,3 +16,5 @@ C:\Users\dell\Desktop\ProyectoFinalDB\Sistema-de-Control-de-Vuelos\SisControlVue
 C:\Users\dell\Desktop\ProyectoFinalDB\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\obj\Debug\netcoreapp3.1\SisControlVuelo.csproj.GenerateResource.cache
 C:\Users\dell\Desktop\ProyectoFinalDB\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\obj\Debug\netcoreapp3.1\SisControlVuelo.Form1.resources
 C:\Users\dell\Desktop\ProyectoFinalDB\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\obj\Debug\netcoreapp3.1\SisControlVuelo.Properties.Resources.resources
+C:\Users\dell\Desktop\ProyectoFinalDB\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\obj\Debug\netcoreapp3.1\SisControlVuelo.AddFlightPage.resources
+C:\Users\dell\Desktop\ProyectoFinalDB\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\obj\Debug\netcoreapp3.1\SisControlVuelo.HistorialVueloPage.resources
