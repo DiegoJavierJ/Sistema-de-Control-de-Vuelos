@@ -59,7 +59,9 @@ namespace SisControlVuelo
 
         private void btn_ModificarVuelo_Click(object sender, EventArgs e)
         {
-
+            ModificarVueloPage frm = new ModificarVueloPage { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.Panel_InfoSCV.Controls.Add(frm);
+            frm.Show();
         }
 
         private void btn_CambiarCuenta_Click(object sender, EventArgs e)

@@ -42,3 +42,5 @@ C:\Users\diego\OneDrive\Desktop\ProyectoFinal\Sistema-de-Control-de-Vuelos\SisCo
 C:\Users\dell\Desktop\ProyectoFinalDB\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\obj\Debug\netcoreapp3.1\SisControlVuelo.AddFlightPage.resources
 C:\Users\dell\Desktop\ProyectoFinalDB\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\obj\Debug\netcoreapp3.1\SisControlVuelo.HistorialVueloPage.resources
 >>>>>>> 8407a21e802f89070d6868e684e8d1025021d953
+C:\Users\dell\Desktop\ProyectoFinalDB\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\obj\Debug\netcoreapp3.1\SisControlVuelo.AddAirlinePage.resources
+C:\Users\dell\Desktop\ProyectoFinalDB\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\obj\Debug\netcoreapp3.1\SisControlVuelo.ModificarVueloPage.resources

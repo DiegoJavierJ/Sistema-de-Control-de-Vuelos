@@ -1,25 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\diego\\OneDrive\\Desktop\\ProyectoFinal\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\diego\\OneDrive\\Desktop\\ProyectoFinal\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\diego\\OneDrive\\Desktop\\ProyectoFinal\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj",
-        "projectName": "SisControlVuelo",
-        "projectPath": "C:\\Users\\diego\\OneDrive\\Desktop\\ProyectoFinal\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj",
-        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\diego\\OneDrive\\Desktop\\ProyectoFinal\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
     "C:\\Users\\dell\\Desktop\\ProyectoFinalDB\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj": {}
   },
   "projects": {
@@ -38,7 +19,6 @@
         ],
         "configFilePaths": [
           "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 8407a21e802f89070d6868e684e8d1025021d953
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -82,11 +62,7 @@
               "privateAssets": "none"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
-=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
->>>>>>> 8407a21e802f89070d6868e684e8d1025021d953
         }
       }
     }

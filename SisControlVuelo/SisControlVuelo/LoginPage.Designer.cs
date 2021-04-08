@@ -52,6 +52,7 @@
             this.tbx_Username.Name = "tbx_Username";
             this.tbx_Username.Size = new System.Drawing.Size(301, 27);
             this.tbx_Username.TabIndex = 1;
+            this.tbx_Username.TextChanged += new System.EventHandler(this.tbx_Username_TextChanged);
             // 
             // lbl_Password
             // 
@@ -69,6 +70,7 @@
             this.tbx_Password.Name = "tbx_Password";
             this.tbx_Password.Size = new System.Drawing.Size(301, 27);
             this.tbx_Password.TabIndex = 3;
+            this.tbx_Password.TextChanged += new System.EventHandler(this.tbx_Password_TextChanged);
             // 
             // btn_LogIn
             // 
@@ -78,6 +80,7 @@
             this.btn_LogIn.TabIndex = 4;
             this.btn_LogIn.Text = "LogIn";
             this.btn_LogIn.UseVisualStyleBackColor = true;
+            this.btn_LogIn.Click += new System.EventHandler(this.btn_LogIn_Click);
             // 
             // lbl_Logo
             // 
