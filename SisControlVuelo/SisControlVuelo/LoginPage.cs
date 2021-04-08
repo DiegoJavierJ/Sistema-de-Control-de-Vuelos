@@ -17,5 +17,19 @@ namespace SisControlVuelo
             InitializeComponent();
         }
 
+        private void tbx_Username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbx_Password_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_LogIn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
