@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "UD2gGy7lNyaTpTTosmORSTtytRboq4KpK3DHRqkVsjdo2Vb1O/aN/7LPCMP5MnWNEtLixPe+xw6d7S+SFAKGEA==",
   "success": true,
   "projectFilePath": "C:\\Users\\diego\\OneDrive\\Desktop\\ProyectoFinal\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj",
+=======
+  "dgSpecHash": "H1Ml9XadBb260VxflFBkI9k6cuW5tKRERQhXatK8Pz9M0uCdPXtz80GGCIUUXSt4UlH9Fy5hJPGAIwJfB2aAlA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dell\\Desktop\\ProyectoFinalDB\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj",
+>>>>>>> 8407a21e802f89070d6868e684e8d1025021d953
   "expectedPackageFiles": [],
   "logs": []
 }

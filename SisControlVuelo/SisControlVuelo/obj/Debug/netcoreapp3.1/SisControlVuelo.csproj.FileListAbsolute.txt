@@ -16,6 +16,7 @@ C:\Users\dell\Desktop\ProyectoFinalDB\Sistema-de-Control-de-Vuelos\SisControlVue
 C:\Users\dell\Desktop\ProyectoFinalDB\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\obj\Debug\netcoreapp3.1\SisControlVuelo.csproj.GenerateResource.cache
 C:\Users\dell\Desktop\ProyectoFinalDB\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\obj\Debug\netcoreapp3.1\SisControlVuelo.Form1.resources
 C:\Users\dell\Desktop\ProyectoFinalDB\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\obj\Debug\netcoreapp3.1\SisControlVuelo.Properties.Resources.resources
+<<<<<<< HEAD
 C:\Users\diego\OneDrive\Desktop\ProyectoFinal\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\bin\Debug\netcoreapp3.1\SisControlVuelo.exe
 C:\Users\diego\OneDrive\Desktop\ProyectoFinal\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\bin\Debug\netcoreapp3.1\SisControlVuelo.deps.json
 C:\Users\diego\OneDrive\Desktop\ProyectoFinal\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\bin\Debug\netcoreapp3.1\SisControlVuelo.runtimeconfig.json
@@ -37,3 +38,7 @@ C:\Users\diego\OneDrive\Desktop\ProyectoFinal\Sistema-de-Control-de-Vuelos\SisCo
 C:\Users\diego\OneDrive\Desktop\ProyectoFinal\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\obj\Debug\netcoreapp3.1\SisControlVuelo.pdb
 C:\Users\diego\OneDrive\Desktop\ProyectoFinal\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\obj\Debug\netcoreapp3.1\SisControlVuelo.genruntimeconfig.cache
 C:\Users\diego\OneDrive\Desktop\ProyectoFinal\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\obj\Debug\netcoreapp3.1\SisControlVuelo.AddAirlinePage.resources
+=======
+C:\Users\dell\Desktop\ProyectoFinalDB\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\obj\Debug\netcoreapp3.1\SisControlVuelo.AddFlightPage.resources
+C:\Users\dell\Desktop\ProyectoFinalDB\Sistema-de-Control-de-Vuelos\SisControlVuelo\SisControlVuelo\obj\Debug\netcoreapp3.1\SisControlVuelo.HistorialVueloPage.resources
+>>>>>>> 8407a21e802f89070d6868e684e8d1025021d953

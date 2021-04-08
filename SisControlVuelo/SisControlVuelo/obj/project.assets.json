@@ -8,23 +8,25 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\diego\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\dell\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\diego\\OneDrive\\Desktop\\ProyectoFinal\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj",
+      "projectUniqueName": "C:\\Users\\dell\\Desktop\\ProyectoFinalDB\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj",
       "projectName": "SisControlVuelo",
-      "projectPath": "C:\\Users\\diego\\OneDrive\\Desktop\\ProyectoFinal\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj",
-      "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\diego\\OneDrive\\Desktop\\ProyectoFinal\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\obj\\",
+      "projectPath": "C:\\Users\\dell\\Desktop\\ProyectoFinalDB\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\SisControlVuelo.csproj",
+      "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dell\\Desktop\\ProyectoFinalDB\\Sistema-de-Control-de-Vuelos\\SisControlVuelo\\SisControlVuelo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -68,7 +70,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
