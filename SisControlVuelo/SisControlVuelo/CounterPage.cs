@@ -92,5 +92,13 @@ namespace SisControlVuelo
             this.Panel_InfoSCV.Controls.Add(addAirlinePage);
             addAirlinePage.Show();
         }
+
+        private void Btn_BuscarVuelo_Click(object sender, EventArgs e)
+        {
+            this.Panel_InfoSCV.Controls.Clear();
+            SearchFlight addAirlinePage = new SearchFlight() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.Panel_InfoSCV.Controls.Add(addAirlinePage);
+            addAirlinePage.Show();
+        }
     }
 }

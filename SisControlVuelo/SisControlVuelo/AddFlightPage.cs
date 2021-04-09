@@ -44,7 +44,7 @@ namespace SisControlVuelo
             // label_Avion
             // 
             this.label_Avion.AutoSize = true;
-            this.label_Avion.Location = new System.Drawing.Point(148, 37);
+            this.label_Avion.Location = new System.Drawing.Point(105, 45);
             this.label_Avion.Name = "label_Avion";
             this.label_Avion.Size = new System.Drawing.Size(38, 15);
             this.label_Avion.TabIndex = 0;
@@ -53,7 +53,7 @@ namespace SisControlVuelo
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(148, 161);
+            this.label2.Location = new System.Drawing.Point(105, 169);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 15);
             this.label2.TabIndex = 0;
@@ -62,7 +62,7 @@ namespace SisControlVuelo
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(148, 223);
+            this.label3.Location = new System.Drawing.Point(300, 169);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(126, 15);
             this.label3.TabIndex = 0;
@@ -71,7 +71,7 @@ namespace SisControlVuelo
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(148, 287);
+            this.label4.Location = new System.Drawing.Point(105, 107);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 15);
             this.label4.TabIndex = 0;
@@ -80,7 +80,7 @@ namespace SisControlVuelo
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(148, 356);
+            this.label5.Location = new System.Drawing.Point(300, 107);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 15);
             this.label5.TabIndex = 0;
@@ -88,28 +88,28 @@ namespace SisControlVuelo
             // 
             // Tbox_Avion
             // 
-            this.Tbox_Avion.Location = new System.Drawing.Point(148, 64);
+            this.Tbox_Avion.Location = new System.Drawing.Point(300, 134);
             this.Tbox_Avion.Name = "Tbox_Avion";
-            this.Tbox_Avion.Size = new System.Drawing.Size(280, 23);
+            this.Tbox_Avion.Size = new System.Drawing.Size(156, 23);
             this.Tbox_Avion.TabIndex = 1;
             // 
             // Tbox_HoraSalida
             // 
-            this.Tbox_HoraSalida.Location = new System.Drawing.Point(148, 314);
+            this.Tbox_HoraSalida.Location = new System.Drawing.Point(105, 134);
             this.Tbox_HoraSalida.Name = "Tbox_HoraSalida";
-            this.Tbox_HoraSalida.Size = new System.Drawing.Size(280, 23);
+            this.Tbox_HoraSalida.Size = new System.Drawing.Size(156, 23);
             this.Tbox_HoraSalida.TabIndex = 1;
             // 
             // Tbox_HoraLlegada
             // 
-            this.Tbox_HoraLlegada.Location = new System.Drawing.Point(148, 379);
+            this.Tbox_HoraLlegada.Location = new System.Drawing.Point(105, 72);
             this.Tbox_HoraLlegada.Name = "Tbox_HoraLlegada";
-            this.Tbox_HoraLlegada.Size = new System.Drawing.Size(280, 23);
+            this.Tbox_HoraLlegada.Size = new System.Drawing.Size(156, 23);
             this.Tbox_HoraLlegada.TabIndex = 1;
             // 
             // Btn_Agregar
             // 
-            this.Btn_Agregar.Location = new System.Drawing.Point(220, 427);
+            this.Btn_Agregar.Location = new System.Drawing.Point(225, 258);
             this.Btn_Agregar.Name = "Btn_Agregar";
             this.Btn_Agregar.Size = new System.Drawing.Size(126, 30);
             this.Btn_Agregar.TabIndex = 2;
@@ -120,7 +120,7 @@ namespace SisControlVuelo
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(148, 99);
+            this.label6.Location = new System.Drawing.Point(300, 45);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(57, 15);
             this.label6.TabIndex = 3;
@@ -129,25 +129,25 @@ namespace SisControlVuelo
             // Cbox_Aerolinea
             // 
             this.Cbox_Aerolinea.FormattingEnabled = true;
-            this.Cbox_Aerolinea.Location = new System.Drawing.Point(148, 126);
+            this.Cbox_Aerolinea.Location = new System.Drawing.Point(300, 72);
             this.Cbox_Aerolinea.Name = "Cbox_Aerolinea";
-            this.Cbox_Aerolinea.Size = new System.Drawing.Size(280, 23);
+            this.Cbox_Aerolinea.Size = new System.Drawing.Size(156, 23);
             this.Cbox_Aerolinea.TabIndex = 4;
             // 
             // Cbox_AeropuertoS
             // 
             this.Cbox_AeropuertoS.FormattingEnabled = true;
-            this.Cbox_AeropuertoS.Location = new System.Drawing.Point(148, 190);
+            this.Cbox_AeropuertoS.Location = new System.Drawing.Point(105, 203);
             this.Cbox_AeropuertoS.Name = "Cbox_AeropuertoS";
-            this.Cbox_AeropuertoS.Size = new System.Drawing.Size(280, 23);
+            this.Cbox_AeropuertoS.Size = new System.Drawing.Size(156, 23);
             this.Cbox_AeropuertoS.TabIndex = 5;
             // 
             // Cbox_AeropuertoE
             // 
             this.Cbox_AeropuertoE.FormattingEnabled = true;
-            this.Cbox_AeropuertoE.Location = new System.Drawing.Point(148, 251);
+            this.Cbox_AeropuertoE.Location = new System.Drawing.Point(300, 203);
             this.Cbox_AeropuertoE.Name = "Cbox_AeropuertoE";
-            this.Cbox_AeropuertoE.Size = new System.Drawing.Size(280, 23);
+            this.Cbox_AeropuertoE.Size = new System.Drawing.Size(156, 23);
             this.Cbox_AeropuertoE.TabIndex = 6;
             // 
             // AddFlightPage
@@ -166,6 +166,7 @@ namespace SisControlVuelo
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label_Avion);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddFlightPage";
             this.ResumeLayout(false);
             this.PerformLayout();
