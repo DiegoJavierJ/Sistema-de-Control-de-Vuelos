@@ -59,6 +59,7 @@ namespace SisControlVuelo
 
         private void btn_ModificarVuelo_Click(object sender, EventArgs e)
         {
+            this.Panel_InfoSCV.Controls.Clear();
             ModificarVueloPage frm = new ModificarVueloPage { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.Panel_InfoSCV.Controls.Add(frm);
             frm.Show();
@@ -79,6 +80,7 @@ namespace SisControlVuelo
 
         private void btn_AgregarAerolinea_Click(object sender, EventArgs e)
         {
+            this.Panel_InfoSCV.Controls.Clear();
             AddAirlinePage frm = new AddAirlinePage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.Panel_InfoSCV.Controls.Add(frm);
             frm.Show();
