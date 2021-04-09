@@ -42,14 +42,18 @@ namespace SisControlVuelo
 
         private void btn_HistorialVuelo_Click(object sender, EventArgs e)
         {
-            HistorialVueloPage frm = new HistorialVueloPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            this.Panel_InfoSCV.Controls.Add(frm);
-            frm.Show();
+            this.Panel_InfoSCV.Controls.Clear();
+            HistorialVueloPage historialVueloPage = new HistorialVueloPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.Panel_InfoSCV.Controls.Add(historialVueloPage);
+            historialVueloPage.Show();
         }
 
         private void btn_RemoverVuelo_Click(object sender, EventArgs e)
         {
-
+            this.Panel_InfoSCV.Controls.Clear();
+            RemoverVueloPage removerVueloPage = new RemoverVueloPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.Panel_InfoSCV.Controls.Add(removerVueloPage);
+            removerVueloPage.Show();
         }
 
         private void btn_AgregarVuelo_Click(object sender, EventArgs e)
@@ -63,9 +67,9 @@ namespace SisControlVuelo
         private void btn_ModificarVuelo_Click(object sender, EventArgs e)
         {
             this.Panel_InfoSCV.Controls.Clear();
-            ModificarVueloPage frm = new ModificarVueloPage { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            this.Panel_InfoSCV.Controls.Add(frm);
-            frm.Show();
+            ModificarVueloPage modificarVueloPage = new ModificarVueloPage { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.Panel_InfoSCV.Controls.Add(modificarVueloPage);
+            modificarVueloPage.Show();
         }
 
         private void btn_CambiarCuenta_Click(object sender, EventArgs e)
@@ -84,9 +88,9 @@ namespace SisControlVuelo
         private void btn_AgregarAerolinea_Click(object sender, EventArgs e)
         {
             this.Panel_InfoSCV.Controls.Clear();
-            AddAirlinePage frm = new AddAirlinePage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            this.Panel_InfoSCV.Controls.Add(frm);
-            frm.Show();
+            AddAirlinePage addAirlinePage = new AddAirlinePage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.Panel_InfoSCV.Controls.Add(addAirlinePage);
+            addAirlinePage.Show();
         }
     }
 }
