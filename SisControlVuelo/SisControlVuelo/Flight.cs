@@ -21,5 +21,19 @@ namespace SisControlVuelo
             Adapt.Fill(dts);
             return dts;
         }
+
+        public DataSet GetOneFlight(int ID)
+        {
+            SqlDataAdapter Adapt = new SqlDataAdapter();
+            Adapt.TableMappings.Add("Table", "Vuelo");
+            SqlCommand comnd = new SqlCommand();
+            comnd.Connection = ConnectionClass.Connect();
+            comnd.CommandText = "EXEC dbo.STP_Vuelo_SLTONE " + ID;
+            comnd.CommandType = CommandType.Text;
+            Adapt.SelectCommand = comnd;
+            DataSet dts = new DataSet("vuelo");
+            Adapt.Fill(dts);
+            return dts;
+        }
     }
 }

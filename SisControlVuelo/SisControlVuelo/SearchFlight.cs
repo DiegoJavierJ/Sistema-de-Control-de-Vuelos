@@ -14,5 +14,13 @@ namespace SisControlVuelo
         {
             InitializeComponent();
         }
+
+        private void Btn_Buscar_Click(object sender, EventArgs e)
+        {
+            Flight vuelo = new Flight();
+            int Parameter = Convert.ToInt32(Tbox_BuscarVuelo.Text);
+            DGridView_BuscarVuelo.DataSource = vuelo.GetOneFlight(Parameter);
+            DGridView_BuscarVuelo.DataMember = "Vuelo";
+        }
     }
 }
