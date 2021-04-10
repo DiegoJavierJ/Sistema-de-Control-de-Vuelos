@@ -365,7 +365,7 @@ GO
 EXEC dbo.STP_Rol_UPD 'Piloto','Conductor'
 GO
 --Modificar un registro de la tabla Estado
-ALTER PROCEDURE dbo.STP_Estado_UPD
+CREATE PROCEDURE dbo.STP_Estado_UPD
 	@varIDPais INT,
 	@varNombreAnterior VARCHAR(100),
 	@varNombreNuevo VARCHAR(100)
@@ -492,28 +492,25 @@ GO
 CREATE PROCEDURE dbo.STP_LogPersonal_UPD
 	@varIDLogPersonaAnterior INT,
 	@varIDLogPersonaNueva INT,
-	@varIDVueloNuevo INT,
-	@varIDRolNuevo INT,
 	@varEstadoNuevo BIT,
 	@varFechaDeEntrada DATETIME,
 	@varFechaDeSalida DATETIME
 
 	AS 
 	UPDATE Tbl_LogPersonal
-	SET ID_Persona=@varIDLogPersonaNueva, ID_Vuelo=@varIDVueloNuevo, ID_Rol=@varIDRolNuevo, Estado=@varEstadoNuevo, FechaDeEntrada=@varFechaDeEntrada, FechaDeSalida=@varFechaDeSalida
-	WHERE ID_Persona=@varIDLogPersonaAnterior
+	SET ID_Personal=@varIDLogPersonaNueva, Estado=@varEstadoNuevo, FechaDeEntrada=@varFechaDeEntrada, FechaDeSalida=@varFechaDeSalida
+	WHERE ID_Personal=@varIDLogPersonaAnterior
 GO
 --Modificar un registro de la tabla Personal
 CREATE PROCEDURE dbo.STP_Personal_UPD
 	@varIDPersonaAnterior INT,
 	@varIDPersonaNueva INT,
-	@varIDVueloNuevo INT,
 	@varIDRolNuevo INT,
 	@varEstadoNuevo BIT
 
 	AS 
 	UPDATE Tbl_Personal
-	SET ID_Persona=@varIDPersonaNueva, ID_Vuelo=@varIDVueloNuevo, ID_Rol=@varIDRolNuevo, Estado=@varEstadoNuevo
+	SET ID_Persona=@varIDPersonaNueva, ID_Rol=@varIDRolNuevo, Estado=@varEstadoNuevo
 	WHERE ID_Persona=@varIDPersonaAnterior
 GO
 
@@ -646,7 +643,7 @@ GO
 
 --Select
 --Seleccionar todos los registros de la tabla LogPersonal
-ALTER PROCEDURE dbo.STP_LogPersonal_SLTALL
+CREATE PROCEDURE dbo.STP_LogPersonal_SLTALL
 
 
 	AS
@@ -674,7 +671,7 @@ GO
 CREATE PROCEDURE dbo.STP_Personal_SLTALL
 	
 	AS
-	SELECT PL.ID_Persona, P.Nombre, P.Apellido,PL.ID_Vuelo, PL.Estado FROM TbL_Personal AS PL
+	SELECT PL.ID_Persona, P.Nombre, P.Apellido, PL.Estado FROM TbL_Personal AS PL
 	INNER JOIN Tbl_Persona AS  P ON PL.ID_Persona=P.ID_Persona
 	INNER JOIN Tbl_Rol AS R ON PL.ID_Rol=R.ID_Rol
 GO
@@ -740,7 +737,7 @@ GO
 EXEC dbo.STP_Pais_SLTALL
 GO
 --Selecciona todos los registros de la tabla aeropuerto
-ALTER PROCEDURE dbo.STP_Aeropuerto_SLTALL
+CREATE PROCEDURE dbo.STP_Aeropuerto_SLTALL
 
 	AS
 	SELECT AE.Nombre AS Aeropuerto, C.Nombre AS Ciudad, AE.Estado AS Activo,E.Nombre AS Estado, P.Nombre AS Pais, AE.FechaRegistro FROM Tbl_Aeropuerto AS AE
@@ -1033,7 +1030,7 @@ GO
 EXEC dbo.STP_AerolineaPorPais_SLT 'Estados Unidos'
 GO
 --Listar Aeropuertos por pais
-ALTER PROCEDURE dbo.STP_AeropuertoPorPais_SLT
+CREATE PROCEDURE dbo.STP_AeropuertoPorPais_SLT
 	@varNombrePais VARCHAR(40)
 	AS
 	SELECT P.Nombre AS Pais, AE.Nombre AS Aeropuerto, C.Nombre AS Ciudad, AE.Estado, AE.FechaRegistro FROM Tbl_Aeropuerto AS AE
