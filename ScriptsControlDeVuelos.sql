@@ -666,10 +666,10 @@ GO
 EXEC dbo.STP_LogPersonal_SLTALL
 GO
 --Seleccionar todos los registros de la tabla Personal_Vuelo
-CREATE PROCEDURE dbo.STP_Personal_Vuelo_SLTALL
+ALTER PROCEDURE dbo.STP_Personal_Vuelo_SLTALL
 	
 	AS
-	SELECT PR.Nombre, PR.Apellido, R.Tipo AS Rol, V.ID_Vuelo FROM Tbl_Personal_Vuelo AS PV
+	SELECT PR.Nombre, PR.Apellido, R.Tipo AS Rol, V.Codigo AS Vuelo FROM Tbl_Personal_Vuelo AS PV
 	INNER JOIN Tbl_Personal AS P ON PV.ID_Personal=P.ID_Personal
 	INNER JOIN Tbl_Persona AS PR ON P.ID_Persona=PR.ID_Persona
 	INNER JOIN Tbl_Rol AS R ON P.ID_Rol=R.ID_Rol
@@ -689,10 +689,10 @@ GO
 EXEC dbo.STP_Personal_SLTALL
 GO
 --Selecciona todos los registros de la tabla vuelo
-CREATE PROCEDURE dbo.STP_Vuelo_SLTALL
+ALTER PROCEDURE dbo.STP_Vuelo_SLTALL
 	
 	AS
-	SELECT V.ID_Vuelo,V.Codigo, AE.Nombre, A.Familia, A.Serie, AE.Nombre, AER.Nombre AS AeropuertoSalida, AER2.Nombre AS AeropuertoLlegada, V.FechaSalida, V.FechaLLegada FROM TBL_Vuelo AS V
+	SELECT V.ID_Vuelo,V.Codigo AS Vuelo, A.Familia AS Avion, A.Familia, A.Serie, AE.Nombre, AER.Nombre AS AeropuertoSalida, AER2.Nombre AS AeropuertoLlegada, V.FechaSalida, V.FechaLLegada FROM TBL_Vuelo AS V
 	INNER JOIN Tbl_Avion AS A ON V.ID_Avion=A.ID_Avion
 	INNER JOIN Tbl_Aerolinea AS AE ON V.ID_Aerolinea=AE.ID_Aerolinea
 	INNER JOIN Tbl_Aeropuerto AS AER ON V.ID_AeropuertoSalida=AER.ID_Aeropuerto
@@ -820,10 +820,12 @@ ALTER PROCEDURE dbo.STP_Personal_Vuelo_SLTONE
 	
 
 	AS
-	SELECT P.Nombre, P.Apellido, PV.ID_Vuelo AS Vuelo, AE.Nombre AS Aerolinea FROM Tbl_Personal_Vuelo AS PV
+	SELECT P.Nombre, P.Apellido, V.Codigo AS Vuelo, AE.Nombre AS Aerolinea FROM Tbl_Personal_Vuelo AS PV
 	INNER JOIN Tbl_Personal AS  PR ON PV.ID_Personal=PR.ID_Personal
 	INNER JOIN Tbl_Persona AS  P ON PR.ID_Persona=P.ID_Persona
 	INNER JOIN Tbl_Aerolinea AS AE ON PR.ID_Aerolinea=AE.ID_Aerolinea
+	INNER JOIN Tbl_Vuelo AS V on PV.ID_Vuelo=V.ID_Vuelo
+
 
 	WHERE P.Nombre=@varNombrePersonal  AND P.Apellido=@varApellidoPersonal
 GO
