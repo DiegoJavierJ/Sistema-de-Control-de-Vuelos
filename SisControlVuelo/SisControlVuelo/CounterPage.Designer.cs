@@ -38,6 +38,7 @@ namespace SisControlVuelo
             this.btn_HistorialVuelo = new System.Windows.Forms.Button();
             this.btn_AgregarVuelo = new System.Windows.Forms.Button();
             this.Panel_Botones = new System.Windows.Forms.Panel();
+            this.Btn_BuscarVuelo = new System.Windows.Forms.Button();
             this.btn_AgregarAerolinea = new System.Windows.Forms.Button();
             this.btn_CambiarCuenta = new System.Windows.Forms.Button();
             this.Panel_InfoSCV = new System.Windows.Forms.Panel();
@@ -48,7 +49,7 @@ namespace SisControlVuelo
             // btn_RemoverVuelo
             // 
             this.btn_RemoverVuelo.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_RemoverVuelo.Location = new System.Drawing.Point(12, 207);
+            this.btn_RemoverVuelo.Location = new System.Drawing.Point(12, 216);
             this.btn_RemoverVuelo.Name = "btn_RemoverVuelo";
             this.btn_RemoverVuelo.Size = new System.Drawing.Size(189, 23);
             this.btn_RemoverVuelo.TabIndex = 2;
@@ -59,7 +60,7 @@ namespace SisControlVuelo
             // btn_ModificarVuelo
             // 
             this.btn_ModificarVuelo.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_ModificarVuelo.Location = new System.Drawing.Point(12, 145);
+            this.btn_ModificarVuelo.Location = new System.Drawing.Point(12, 164);
             this.btn_ModificarVuelo.Name = "btn_ModificarVuelo";
             this.btn_ModificarVuelo.Size = new System.Drawing.Size(189, 23);
             this.btn_ModificarVuelo.TabIndex = 3;
@@ -111,7 +112,7 @@ namespace SisControlVuelo
             // 
             this.btn_HistorialVuelo.AllowDrop = true;
             this.btn_HistorialVuelo.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_HistorialVuelo.Location = new System.Drawing.Point(12, 21);
+            this.btn_HistorialVuelo.Location = new System.Drawing.Point(12, 15);
             this.btn_HistorialVuelo.Name = "btn_HistorialVuelo";
             this.btn_HistorialVuelo.Size = new System.Drawing.Size(189, 23);
             this.btn_HistorialVuelo.TabIndex = 9;
@@ -122,7 +123,7 @@ namespace SisControlVuelo
             // btn_AgregarVuelo
             // 
             this.btn_AgregarVuelo.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_AgregarVuelo.Location = new System.Drawing.Point(12, 83);
+            this.btn_AgregarVuelo.Location = new System.Drawing.Point(12, 111);
             this.btn_AgregarVuelo.Name = "btn_AgregarVuelo";
             this.btn_AgregarVuelo.Size = new System.Drawing.Size(189, 23);
             this.btn_AgregarVuelo.TabIndex = 4;
@@ -134,6 +135,7 @@ namespace SisControlVuelo
             // 
             this.Panel_Botones.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Panel_Botones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(76)))), ((int)(((byte)(153)))));
+            this.Panel_Botones.Controls.Add(this.Btn_BuscarVuelo);
             this.Panel_Botones.Controls.Add(this.btn_AgregarAerolinea);
             this.Panel_Botones.Controls.Add(this.btn_CambiarCuenta);
             this.Panel_Botones.Controls.Add(this.btn_RemoverVuelo);
@@ -146,10 +148,21 @@ namespace SisControlVuelo
             this.Panel_Botones.Size = new System.Drawing.Size(214, 366);
             this.Panel_Botones.TabIndex = 9;
             // 
+            // Btn_BuscarVuelo
+            // 
+            this.Btn_BuscarVuelo.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Btn_BuscarVuelo.Location = new System.Drawing.Point(12, 60);
+            this.Btn_BuscarVuelo.Name = "Btn_BuscarVuelo";
+            this.Btn_BuscarVuelo.Size = new System.Drawing.Size(189, 23);
+            this.Btn_BuscarVuelo.TabIndex = 12;
+            this.Btn_BuscarVuelo.Text = "Buscar Vuelo";
+            this.Btn_BuscarVuelo.UseVisualStyleBackColor = true;
+            this.Btn_BuscarVuelo.Click += new System.EventHandler(this.Btn_BuscarVuelo_Click);
+            // 
             // btn_AgregarAerolinea
             // 
             this.btn_AgregarAerolinea.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_AgregarAerolinea.Location = new System.Drawing.Point(12, 268);
+            this.btn_AgregarAerolinea.Location = new System.Drawing.Point(12, 270);
             this.btn_AgregarAerolinea.Name = "btn_AgregarAerolinea";
             this.btn_AgregarAerolinea.Size = new System.Drawing.Size(189, 23);
             this.btn_AgregarAerolinea.TabIndex = 11;
@@ -210,5 +223,6 @@ namespace SisControlVuelo
         private System.Windows.Forms.Button btn_CambiarCuenta;
         private System.Windows.Forms.Button btn_AgregarAerolinea;
         private System.Windows.Forms.Panel Panel_InfoSCV;
+        private System.Windows.Forms.Button Btn_BuscarVuelo;
     }
 }

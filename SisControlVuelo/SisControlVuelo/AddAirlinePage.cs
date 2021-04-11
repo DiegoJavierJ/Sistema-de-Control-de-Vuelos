@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace SisControlVuelo
@@ -13,6 +14,11 @@ namespace SisControlVuelo
         public AddAirlinePage()
         {
             InitializeComponent();
+        }
+
+        private void btn_AgregarAerolinea_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

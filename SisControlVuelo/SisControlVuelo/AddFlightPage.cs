@@ -9,13 +9,15 @@ namespace SisControlVuelo
         private Label label3;
         private Label label4;
         private Label label5;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private Button button1;
-        private Label label1;
+        private TextBox Tbox_Avion;
+        private TextBox Tbox_HoraSalida;
+        private TextBox Tbox_HoraLlegada;
+        private Button Btn_Agregar;
+        private Label label6;
+        private ComboBox Cbox_Aerolinea;
+        private ComboBox Cbox_AeropuertoS;
+        private ComboBox Cbox_AeropuertoE;
+        private Label label_Avion;
 
         public AddFlightPage()
         {
@@ -24,123 +26,150 @@ namespace SisControlVuelo
 
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.label_Avion = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Tbox_Avion = new System.Windows.Forms.TextBox();
+            this.Tbox_HoraSalida = new System.Windows.Forms.TextBox();
+            this.Tbox_HoraLlegada = new System.Windows.Forms.TextBox();
+            this.Btn_Agregar = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Cbox_Aerolinea = new System.Windows.Forms.ComboBox();
+            this.Cbox_AeropuertoS = new System.Windows.Forms.ComboBox();
+            this.Cbox_AeropuertoE = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // label1
+            // label_Avion
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(148, 66);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Avion";
+            this.label_Avion.AutoSize = true;
+            this.label_Avion.Location = new System.Drawing.Point(105, 45);
+            this.label_Avion.Name = "label_Avion";
+            this.label_Avion.Size = new System.Drawing.Size(38, 15);
+            this.label_Avion.TabIndex = 0;
+            this.label_Avion.Text = "Avion";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(148, 131);
+            this.label2.Location = new System.Drawing.Point(105, 169);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 20);
+            this.label2.Size = new System.Drawing.Size(117, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "Aeropuerto de Salida";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(148, 196);
+            this.label3.Location = new System.Drawing.Point(300, 169);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 20);
+            this.label3.Size = new System.Drawing.Size(126, 15);
             this.label3.TabIndex = 0;
             this.label3.Text = "Aeropuerto de Entrada";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(148, 261);
+            this.label4.Location = new System.Drawing.Point(105, 107);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 20);
+            this.label4.Size = new System.Drawing.Size(83, 15);
             this.label4.TabIndex = 0;
             this.label4.Text = "Hora de Salida";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(148, 326);
+            this.label5.Location = new System.Drawing.Point(300, 107);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(120, 20);
+            this.label5.Size = new System.Drawing.Size(93, 15);
             this.label5.TabIndex = 0;
             this.label5.Text = "Hora de Llegada";
             // 
-            // textBox1
+            // Tbox_Avion
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 89);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(280, 27);
-            this.textBox1.TabIndex = 1;
+            this.Tbox_Avion.Location = new System.Drawing.Point(300, 134);
+            this.Tbox_Avion.Name = "Tbox_Avion";
+            this.Tbox_Avion.Size = new System.Drawing.Size(156, 23);
+            this.Tbox_Avion.TabIndex = 1;
             // 
-            // textBox2
+            // Tbox_HoraSalida
             // 
-            this.textBox2.Location = new System.Drawing.Point(148, 154);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(280, 27);
-            this.textBox2.TabIndex = 1;
+            this.Tbox_HoraSalida.Location = new System.Drawing.Point(105, 134);
+            this.Tbox_HoraSalida.Name = "Tbox_HoraSalida";
+            this.Tbox_HoraSalida.Size = new System.Drawing.Size(156, 23);
+            this.Tbox_HoraSalida.TabIndex = 1;
             // 
-            // textBox3
+            // Tbox_HoraLlegada
             // 
-            this.textBox3.Location = new System.Drawing.Point(148, 219);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(280, 27);
-            this.textBox3.TabIndex = 1;
+            this.Tbox_HoraLlegada.Location = new System.Drawing.Point(105, 72);
+            this.Tbox_HoraLlegada.Name = "Tbox_HoraLlegada";
+            this.Tbox_HoraLlegada.Size = new System.Drawing.Size(156, 23);
+            this.Tbox_HoraLlegada.TabIndex = 1;
             // 
-            // textBox4
+            // Btn_Agregar
             // 
-            this.textBox4.Location = new System.Drawing.Point(148, 284);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(280, 27);
-            this.textBox4.TabIndex = 1;
+            this.Btn_Agregar.Location = new System.Drawing.Point(225, 258);
+            this.Btn_Agregar.Name = "Btn_Agregar";
+            this.Btn_Agregar.Size = new System.Drawing.Size(126, 30);
+            this.Btn_Agregar.TabIndex = 2;
+            this.Btn_Agregar.Text = "Agregar";
+            this.Btn_Agregar.UseVisualStyleBackColor = true;
+            this.Btn_Agregar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox5
+            // label6
             // 
-            this.textBox5.Location = new System.Drawing.Point(148, 349);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(280, 27);
-            this.textBox5.TabIndex = 1;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(300, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(57, 15);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Aerolinea";
             // 
-            // button1
+            // Cbox_Aerolinea
             // 
-            this.button1.Location = new System.Drawing.Point(220, 397);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 30);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Cbox_Aerolinea.FormattingEnabled = true;
+            this.Cbox_Aerolinea.Location = new System.Drawing.Point(300, 72);
+            this.Cbox_Aerolinea.Name = "Cbox_Aerolinea";
+            this.Cbox_Aerolinea.Size = new System.Drawing.Size(156, 23);
+            this.Cbox_Aerolinea.TabIndex = 4;
+            // 
+            // Cbox_AeropuertoS
+            // 
+            this.Cbox_AeropuertoS.FormattingEnabled = true;
+            this.Cbox_AeropuertoS.Location = new System.Drawing.Point(105, 203);
+            this.Cbox_AeropuertoS.Name = "Cbox_AeropuertoS";
+            this.Cbox_AeropuertoS.Size = new System.Drawing.Size(156, 23);
+            this.Cbox_AeropuertoS.TabIndex = 5;
+            // 
+            // Cbox_AeropuertoE
+            // 
+            this.Cbox_AeropuertoE.FormattingEnabled = true;
+            this.Cbox_AeropuertoE.Location = new System.Drawing.Point(300, 203);
+            this.Cbox_AeropuertoE.Name = "Cbox_AeropuertoE";
+            this.Cbox_AeropuertoE.Size = new System.Drawing.Size(156, 23);
+            this.Cbox_AeropuertoE.TabIndex = 6;
             // 
             // AddFlightPage
             // 
             this.ClientSize = new System.Drawing.Size(591, 490);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Cbox_AeropuertoE);
+            this.Controls.Add(this.Cbox_AeropuertoS);
+            this.Controls.Add(this.Cbox_Aerolinea);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.Btn_Agregar);
+            this.Controls.Add(this.Tbox_HoraLlegada);
+            this.Controls.Add(this.Tbox_HoraSalida);
+            this.Controls.Add(this.Tbox_Avion);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+<<<<<<< HEAD
             this.Controls.Add(this.label1);
+=======
+            this.Controls.Add(this.label_Avion);
+>>>>>>> 13edee7cf1ebf58f42359277759943d1445f97da
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddFlightPage";
             this.ResumeLayout(false);
@@ -149,6 +178,11 @@ namespace SisControlVuelo
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }

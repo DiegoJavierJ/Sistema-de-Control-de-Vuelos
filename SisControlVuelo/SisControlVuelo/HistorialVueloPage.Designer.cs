@@ -29,48 +29,68 @@ namespace SisControlVuelo
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btn_MostrarFecha = new System.Windows.Forms.Button();
-            this.btn_MostrarAerolinea = new System.Windows.Forms.Button();
-            this.btn_MostrarAeropuerto = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.DGridView_HistorialVuelos = new System.Windows.Forms.DataGridView();
+            this.Label_MostrarPorAeropuerto = new System.Windows.Forms.Label();
+            this.Tbox_MostrarPorAerolinea = new System.Windows.Forms.TextBox();
+            this.Tbox_MostrarPorAeropuerto = new System.Windows.Forms.TextBox();
+            this.Label_MostrarPorAerolinea = new System.Windows.Forms.Label();
+            this.Btn_Buscar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.DGridView_HistorialVuelos)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // DGridView_HistorialVuelos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 71);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(533, 260);
-            this.dataGridView1.TabIndex = 0;
+            this.DGridView_HistorialVuelos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGridView_HistorialVuelos.Location = new System.Drawing.Point(23, 71);
+            this.DGridView_HistorialVuelos.Name = "DGridView_HistorialVuelos";
+            this.DGridView_HistorialVuelos.RowHeadersWidth = 51;
+            this.DGridView_HistorialVuelos.RowTemplate.Height = 25;
+            this.DGridView_HistorialVuelos.Size = new System.Drawing.Size(563, 260);
+            this.DGridView_HistorialVuelos.TabIndex = 0;
+            this.DGridView_HistorialVuelos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGridView_HistorialVuelos_CellContentClick);
             // 
-            // btn_MostrarFecha
+            // Label_MostrarPorAeropuerto
             // 
-            this.btn_MostrarFecha.Location = new System.Drawing.Point(41, 42);
-            this.btn_MostrarFecha.Name = "btn_MostrarFecha";
-            this.btn_MostrarFecha.Size = new System.Drawing.Size(130, 23);
-            this.btn_MostrarFecha.TabIndex = 1;
-            this.btn_MostrarFecha.Text = "Mostrar por Fecha";
-            this.btn_MostrarFecha.UseVisualStyleBackColor = true;
+            this.Label_MostrarPorAeropuerto.AutoSize = true;
+            this.Label_MostrarPorAeropuerto.Location = new System.Drawing.Point(23, 44);
+            this.Label_MostrarPorAeropuerto.Name = "Label_MostrarPorAeropuerto";
+            this.Label_MostrarPorAeropuerto.Size = new System.Drawing.Size(132, 15);
+            this.Label_MostrarPorAeropuerto.TabIndex = 8;
+            this.Label_MostrarPorAeropuerto.Text = "Mostrar por Aeropuerto";
             // 
-            // btn_MostrarAerolinea
+            // Tbox_MostrarPorAerolinea
             // 
-            this.btn_MostrarAerolinea.Location = new System.Drawing.Point(210, 42);
-            this.btn_MostrarAerolinea.Name = "btn_MostrarAerolinea";
-            this.btn_MostrarAerolinea.Size = new System.Drawing.Size(151, 23);
-            this.btn_MostrarAerolinea.TabIndex = 2;
-            this.btn_MostrarAerolinea.Text = "Mostrar por Aerolinea";
-            this.btn_MostrarAerolinea.UseVisualStyleBackColor = true;
+            this.Tbox_MostrarPorAerolinea.Location = new System.Drawing.Point(154, 41);
+            this.Tbox_MostrarPorAerolinea.Name = "Tbox_MostrarPorAerolinea";
+            this.Tbox_MostrarPorAerolinea.Size = new System.Drawing.Size(149, 23);
+            this.Tbox_MostrarPorAerolinea.TabIndex = 11;
+            this.Tbox_MostrarPorAerolinea.TextChanged += new System.EventHandler(this.Tbox_MostrarPorAerolinea_TextChanged);
             // 
-            // btn_MostrarAeropuerto
+            // Tbox_MostrarPorAeropuerto
             // 
-            this.btn_MostrarAeropuerto.Location = new System.Drawing.Point(386, 42);
-            this.btn_MostrarAeropuerto.Name = "btn_MostrarAeropuerto";
-            this.btn_MostrarAeropuerto.Size = new System.Drawing.Size(151, 23);
-            this.btn_MostrarAeropuerto.TabIndex = 3;
-            this.btn_MostrarAeropuerto.Text = "Mostrar por Aeropuerto";
-            this.btn_MostrarAeropuerto.UseVisualStyleBackColor = true;
+            this.Tbox_MostrarPorAeropuerto.Location = new System.Drawing.Point(437, 41);
+            this.Tbox_MostrarPorAeropuerto.Name = "Tbox_MostrarPorAeropuerto";
+            this.Tbox_MostrarPorAeropuerto.Size = new System.Drawing.Size(149, 23);
+            this.Tbox_MostrarPorAeropuerto.TabIndex = 10;
+            this.Tbox_MostrarPorAeropuerto.TextChanged += new System.EventHandler(this.Tbox_MostrarPorAeropuerto_TextChanged);
+            // 
+            // Label_MostrarPorAerolinea
+            // 
+            this.Label_MostrarPorAerolinea.AutoSize = true;
+            this.Label_MostrarPorAerolinea.Location = new System.Drawing.Point(309, 44);
+            this.Label_MostrarPorAerolinea.Name = "Label_MostrarPorAerolinea";
+            this.Label_MostrarPorAerolinea.Size = new System.Drawing.Size(122, 15);
+            this.Label_MostrarPorAerolinea.TabIndex = 12;
+            this.Label_MostrarPorAerolinea.Text = "Mostrar por Aerolinea";
+            // 
+            // Btn_Buscar
+            // 
+            this.Btn_Buscar.Location = new System.Drawing.Point(511, 337);
+            this.Btn_Buscar.Name = "Btn_Buscar";
+            this.Btn_Buscar.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Buscar.TabIndex = 13;
+            this.Btn_Buscar.Text = "Buscar";
+            this.Btn_Buscar.UseVisualStyleBackColor = true;
             // 
             // HistorialVueloPage
             // 
@@ -78,10 +98,12 @@ namespace SisControlVuelo
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
-            this.Controls.Add(this.btn_MostrarAeropuerto);
-            this.Controls.Add(this.btn_MostrarAerolinea);
-            this.Controls.Add(this.btn_MostrarFecha);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.Btn_Buscar);
+            this.Controls.Add(this.Label_MostrarPorAerolinea);
+            this.Controls.Add(this.Tbox_MostrarPorAerolinea);
+            this.Controls.Add(this.Tbox_MostrarPorAeropuerto);
+            this.Controls.Add(this.Label_MostrarPorAeropuerto);
+            this.Controls.Add(this.DGridView_HistorialVuelos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -89,16 +111,20 @@ namespace SisControlVuelo
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "HistorialVueloPage";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.HistorialVueloPage_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DGridView_HistorialVuelos)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btn_MostrarFecha;
-        private System.Windows.Forms.Button btn_MostrarAerolinea;
-        private System.Windows.Forms.Button btn_MostrarAeropuerto;
+        private System.Windows.Forms.DataGridView DGridView_HistorialVuelos;
+        private System.Windows.Forms.Label Label_MostrarPorAeropuerto;
+        private System.Windows.Forms.TextBox Tbox_MostrarPorAerolinea;
+        private System.Windows.Forms.TextBox Tbox_MostrarPorAeropuerto;
+        private System.Windows.Forms.Label Label_MostrarPorAerolinea;
+        private System.Windows.Forms.Button Btn_Buscar;
     }
 }
