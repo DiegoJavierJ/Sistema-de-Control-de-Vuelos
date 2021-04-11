@@ -9,7 +9,7 @@ namespace SisControlVuelo
     {
         public static SqlConnection Connect(){
 
-            SqlConnection conect = new SqlConnection("Server=MSI\\SQLEXPRESS;Database=DB_ControlDeVuelos;Trusted_Connection=True;");
+            SqlConnection conect = new SqlConnection("Server=localhost;Database=DB_PF;Trusted_Connection=True;");
 
             conect.Open();
 
