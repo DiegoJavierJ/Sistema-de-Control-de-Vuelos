@@ -54,7 +54,10 @@ namespace SisControlVuelo
 
         private void btn_AgregarVuelo_Click(object sender, EventArgs e)
         {
-
+            this.Panel_InfoSCV.Controls.Clear();
+            AddFlightPage frm = new AddFlightPage { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.Panel_InfoSCV.Controls.Add(frm);
+            frm.Show();
         }
 
         private void btn_ModificarVuelo_Click(object sender, EventArgs e)
