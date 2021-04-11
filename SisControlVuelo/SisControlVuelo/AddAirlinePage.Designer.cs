@@ -76,6 +76,7 @@ namespace SisControlVuelo
             this.btn_AgregarAerolinea.TabIndex = 4;
             this.btn_AgregarAerolinea.Text = "Agregar";
             this.btn_AgregarAerolinea.UseVisualStyleBackColor = true;
+            this.btn_AgregarAerolinea.Click += new System.EventHandler(this.btn_AgregarAerolinea_Click);
             // 
             // AddAirlinePage
             // 

@@ -186,6 +186,7 @@ CREATE PROCEDURE dbo.STP_Pais_INS
 	INSERT INTO TBL_Pais(Nombre) VALUES (@Nombre)
 GO
 EXEC DBO.STP_Pais_INS 'Estados Unidos'
+EXEC DBO.STP_Pais_INS 'Brazil'
 GO
 --Insertar un registro en la tabla estado
 CREATE PROCEDURE dbo.STP_Estado_INS
@@ -197,7 +198,7 @@ CREATE PROCEDURE dbo.STP_Estado_INS
 	INSERT INTO Tbl_Estado(ID_Pais,Nombre) VALUES (@varIDPais,@varNombre)
 GO
 EXEC dbo.STP_Estado_INS 1, 'New Jersey'
-
+EXEC dbo.STP_Estado_INS 2, 'Rio de Janeiro'
 GO
 
 --Insertar un registro en la tabla ciudad
@@ -210,6 +211,7 @@ CREATE PROCEDURE dbo.STP_Ciudad_INS
 	INSERT INTO Tbl_Ciudad(ID_Estado, Nombre) VALUES (@varIDEstado, @varNombre)
 GO
 EXEC dbo.STP_Ciudad_INS 1, 'Newark y Elizabeth'
+EXEC DBO.STP_Ciudad_INS 2, 'Rio de Janeiro'
 GO
 --Insertar un registro en la tabla Aeropuerto
 CREATE PROCEDURE dbo.STP_Aeropuerto_INS
@@ -222,6 +224,7 @@ CREATE PROCEDURE dbo.STP_Aeropuerto_INS
 	INSERT INTO Tbl_Aeropuerto(ID_Ciudad, Nombre, Estado) VALUES (@varIDCiudad, @varNombre, @varEstado)
 GO
 EXEC dbo.STP_Aeropuerto_INS 1,'Aeropuerto Internacional Libertad de Newark', 1
+EXEC dbo.STP_Aeropuerto_INS 2, 'Aeropuerto Internacional Antônio Carlos Jobim', 2
 GO
 --Insertar un registro en la tabla Aerolinea
 CREATE PROCEDURE dbo.STP_Aerolinea_INS
@@ -233,7 +236,7 @@ CREATE PROCEDURE dbo.STP_Aerolinea_INS
 	INSERT INTO Tbl_Aerolinea(Nombre, ID_Pais) VALUES (@varNombre, @varIDPais)
 GO
 EXEC dbo.STP_Aerolinea_INS 'United Airlines', 1
-
+EXEC dbo.STP_Aerolinea_INS 'Jetblue', 2
 GO
 
 --Insertar un registro en la tabla Aerolinea_Aeropuerto
@@ -246,7 +249,7 @@ CREATE PROCEDURE dbo.STP_Aerolinea_Aeropuerto_INS
 	INSERT INTO Tbl_Aerolinea_Aeropuerto(ID_Aerolinea, ID_Aeropuerto) VALUES (@varIDAerolina,@varIDAeropuerto)
 GO
 EXEC dbo.STP_Aerolinea_Aeropuerto_INS 1,1
-
+EXEC dbo.STP_Aerolinea_Aeropuerto_INS 2,2
 GO
 --Insertar un registro en la tabla Avion
 CREATE PROCEDURE dbo.STP_Avion_INS
@@ -258,6 +261,7 @@ CREATE PROCEDURE dbo.STP_Avion_INS
 	INSERT INTO Tbl_Avion(Familia,Serie) VALUES (@varFamilia, @varSerie)
 GO
 EXEC dbo.STP_Avion_INS 'BOEING', '747-8'
+EXEC dbo.STP_Avion_INS 'Airbus', 'A320'
 GO
 --Inserta un registro en la tabla Aerolina_Avion
 CREATE PROCEDURE dbo_STP_Aerolinea_Avion_INS
@@ -269,6 +273,7 @@ CREATE PROCEDURE dbo_STP_Aerolinea_Avion_INS
 	INSERT INTO Tbl_Aerolinea_Avion (ID_Aerolinea, ID_Avion) VALUES (@varIDAvion,@varIDAerolinea)
 GO
 EXEC dbo.dbo_STP_Aerolinea_Avion_INS 1,1
+EXEC dbo.dbo_STP_Aerolinea_Avion_INS 2,2
 GO
 --Insertar un registro en la tabla vuelo
 CREATE PROCEDURE dbo.STP_Vuelo_INS
@@ -286,6 +291,7 @@ CREATE PROCEDURE dbo.STP_Vuelo_INS
 	INSERT INTO Tbl_Vuelo(Codigo, ID_Avion,ID_Aerolinea, ID_AeropuertoSalida, ID_AeropuertoLlegada, FechaSalida, FechaLlegada, Estado) VALUES (@varCodigo, @varID_Avion, @varID_Aerolinea, @varIDAeropuertoSalida, @varIDAeropuertoLlegada, @FechaSalida, @FechaLlegada, @Estado)
 GO
 EXEC dbo.STP_Vuelo_INS 'AILN-1',1,1,1,1,'4/7/2021','4/8/2021',1
+EXEC dbo.STP_Vuelo_INS 'BA2490',2,2,2,2,'4/10/2021','4/11/2021',2
 GO
 
 --Insertar un registro en la tabla personal

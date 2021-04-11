@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace SisControlVuelo
@@ -43,7 +44,7 @@ namespace SisControlVuelo
         private void btn_HistorialVuelo_Click(object sender, EventArgs e)
         {
             this.Panel_InfoSCV.Controls.Clear();
-            HistorialVueloPage historialVueloPage = new HistorialVueloPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            HistorialVueloPage historialVueloPage = new HistorialVueloPage() {TopLevel = false };
             this.Panel_InfoSCV.Controls.Add(historialVueloPage);
             historialVueloPage.Show();
         }

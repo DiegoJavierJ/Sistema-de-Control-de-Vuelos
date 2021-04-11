@@ -165,7 +165,11 @@ namespace SisControlVuelo
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+<<<<<<< HEAD
+            this.Controls.Add(this.label1);
+=======
             this.Controls.Add(this.label_Avion);
+>>>>>>> 13edee7cf1ebf58f42359277759943d1445f97da
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddFlightPage";
             this.ResumeLayout(false);
