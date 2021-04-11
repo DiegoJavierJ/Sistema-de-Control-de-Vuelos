@@ -36,7 +36,6 @@ namespace SisControlVuelo
             this.btn_Modificar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.tbx_CambioCampo = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -44,9 +43,9 @@ namespace SisControlVuelo
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(130, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 15);
+            this.label1.Size = new System.Drawing.Size(95, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Numero de Vuelo";
+            this.label1.Text = "Codigo de Vuelo";
             // 
             // tbx_IdVuelo
             // 
@@ -67,7 +66,6 @@ namespace SisControlVuelo
             // 
             // cbx_Campos
             // 
-            this.cbx_Campos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_Campos.FormattingEnabled = true;
             this.cbx_Campos.Items.AddRange(new object[] {
             "Aeropuerto Salida",
@@ -109,21 +107,11 @@ namespace SisControlVuelo
             this.tbx_CambioCampo.Size = new System.Drawing.Size(246, 23);
             this.tbx_CambioCampo.TabIndex = 6;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(35, 137);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 60);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // ModificarVueloPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(517, 405);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.tbx_CambioCampo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_Modificar);
@@ -150,6 +138,5 @@ namespace SisControlVuelo
         private System.Windows.Forms.Button btn_Modificar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbx_CambioCampo;
-        private System.Windows.Forms.Button button1;
     }
 }

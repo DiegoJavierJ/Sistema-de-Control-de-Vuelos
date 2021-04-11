@@ -83,6 +83,7 @@ namespace SisControlVuelo
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SearchFlight";
             this.Text = "SearchFlight";
+            this.Load += new System.EventHandler(this.SearchFlight_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGridView_BuscarVuelo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

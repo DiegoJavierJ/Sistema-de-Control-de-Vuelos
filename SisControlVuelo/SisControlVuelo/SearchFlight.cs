@@ -22,5 +22,10 @@ namespace SisControlVuelo
             DGridView_BuscarVuelo.DataSource = vuelo.GetOneFlight(Parameter);
             DGridView_BuscarVuelo.DataMember = "Vuelo";
         }
+
+        private void SearchFlight_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
