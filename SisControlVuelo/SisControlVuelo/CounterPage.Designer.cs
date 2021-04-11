@@ -42,6 +42,7 @@ namespace SisControlVuelo
             this.btn_AgregarAerolinea = new System.Windows.Forms.Button();
             this.btn_CambiarCuenta = new System.Windows.Forms.Button();
             this.Panel_InfoSCV = new System.Windows.Forms.Panel();
+            this.Btn_ControlDePersonal = new System.Windows.Forms.Button();
             this.Panel_Titulo.SuspendLayout();
             this.Panel_Botones.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +50,7 @@ namespace SisControlVuelo
             // btn_RemoverVuelo
             // 
             this.btn_RemoverVuelo.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_RemoverVuelo.Location = new System.Drawing.Point(12, 216);
+            this.btn_RemoverVuelo.Location = new System.Drawing.Point(12, 197);
             this.btn_RemoverVuelo.Name = "btn_RemoverVuelo";
             this.btn_RemoverVuelo.Size = new System.Drawing.Size(189, 23);
             this.btn_RemoverVuelo.TabIndex = 2;
@@ -60,7 +61,7 @@ namespace SisControlVuelo
             // btn_ModificarVuelo
             // 
             this.btn_ModificarVuelo.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_ModificarVuelo.Location = new System.Drawing.Point(12, 164);
+            this.btn_ModificarVuelo.Location = new System.Drawing.Point(12, 150);
             this.btn_ModificarVuelo.Name = "btn_ModificarVuelo";
             this.btn_ModificarVuelo.Size = new System.Drawing.Size(189, 23);
             this.btn_ModificarVuelo.TabIndex = 3;
@@ -123,7 +124,7 @@ namespace SisControlVuelo
             // btn_AgregarVuelo
             // 
             this.btn_AgregarVuelo.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_AgregarVuelo.Location = new System.Drawing.Point(12, 111);
+            this.btn_AgregarVuelo.Location = new System.Drawing.Point(12, 103);
             this.btn_AgregarVuelo.Name = "btn_AgregarVuelo";
             this.btn_AgregarVuelo.Size = new System.Drawing.Size(189, 23);
             this.btn_AgregarVuelo.TabIndex = 4;
@@ -135,6 +136,7 @@ namespace SisControlVuelo
             // 
             this.Panel_Botones.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Panel_Botones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(76)))), ((int)(((byte)(153)))));
+            this.Panel_Botones.Controls.Add(this.Btn_ControlDePersonal);
             this.Panel_Botones.Controls.Add(this.Btn_BuscarVuelo);
             this.Panel_Botones.Controls.Add(this.btn_AgregarAerolinea);
             this.Panel_Botones.Controls.Add(this.btn_CambiarCuenta);
@@ -162,7 +164,7 @@ namespace SisControlVuelo
             // btn_AgregarAerolinea
             // 
             this.btn_AgregarAerolinea.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_AgregarAerolinea.Location = new System.Drawing.Point(12, 270);
+            this.btn_AgregarAerolinea.Location = new System.Drawing.Point(12, 241);
             this.btn_AgregarAerolinea.Name = "btn_AgregarAerolinea";
             this.btn_AgregarAerolinea.Size = new System.Drawing.Size(189, 23);
             this.btn_AgregarAerolinea.TabIndex = 11;
@@ -189,6 +191,15 @@ namespace SisControlVuelo
             this.Panel_InfoSCV.Size = new System.Drawing.Size(600, 366);
             this.Panel_InfoSCV.TabIndex = 10;
             this.Panel_InfoSCV.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_InfoSCV_Paint);
+            // 
+            // Btn_ControlDePersonal
+            // 
+            this.Btn_ControlDePersonal.Location = new System.Drawing.Point(12, 282);
+            this.Btn_ControlDePersonal.Name = "Btn_ControlDePersonal";
+            this.Btn_ControlDePersonal.Size = new System.Drawing.Size(189, 23);
+            this.Btn_ControlDePersonal.TabIndex = 0;
+            this.Btn_ControlDePersonal.Text = "Control de Personal";
+            this.Btn_ControlDePersonal.UseVisualStyleBackColor = true;
             // 
             // CounterPage
             // 
@@ -224,5 +235,6 @@ namespace SisControlVuelo
         private System.Windows.Forms.Button btn_AgregarAerolinea;
         private System.Windows.Forms.Panel Panel_InfoSCV;
         private System.Windows.Forms.Button Btn_BuscarVuelo;
+        private System.Windows.Forms.Button Btn_ControlDePersonal;
     }
 }
