@@ -94,6 +94,7 @@ CREATE TABLE Tbl_Personal(
 	ID_Personal INT CONSTRAINT [PK_Personal] PRIMARY KEY IDENTITY,
 	ID_Persona INT FOREIGN KEY REFERENCES Tbl_Persona(ID_Persona),
 	ID_Rol INT FOREIGN KEY REFERENCES Tbl_Rol(ID_Rol),
+	ID_Aerolinea INT FOREIGN KEY REFERENCES Tbl_Aerolinea(ID_Aerolinea),
 	Estado BIT NOT NULL
 );
 GO
@@ -294,16 +295,17 @@ EXEC dbo.STP_Vuelo_INS 'BA2490',2,2,2,2,'4/10/2021','4/11/2021',2
 GO
 
 --Insertar un registro en la tabla personal
-CREATE PROCEDURE dbo.STP_Personal_INS
+ALTER PROCEDURE dbo.STP_Personal_INS
 	@varIDPersona INT, 
 	@varIDRol INT,
+	@varIDAerolinea INT,
 	@Estado BIT
 
 	AS
 
-	INSERT INTO Tbl_Personal(ID_Persona, ID_Rol, Estado) VALUES (@varIDPersona, @varIDRol, @Estado)
+	INSERT INTO Tbl_Personal(ID_Persona, ID_Rol, ID_Aerolinea,Estado) VALUES (@varIDPersona, @varIDRol, @varIDAerolinea,@Estado)
 GO
-EXEC dbo.STP_Personal_INS 1,1,1
+EXEC dbo.STP_Personal_INS 1,1,1,1
 GO
 --Insertar un registro en la tabla Personal_Vuelo
 CREATE PROCEDURE dbo.STP_Personal_Vuelo_INS
@@ -508,19 +510,21 @@ CREATE PROCEDURE dbo.STP_LogPersonal_UPD
 	WHERE ID_Personal=@varIDLogPersonaAnterior
 GO
 --Modificar un registro de la tabla Personal
-CREATE PROCEDURE dbo.STP_Personal_UPD
+ALTER PROCEDURE dbo.STP_Personal_UPD
 	@varIDPersonaAnterior INT,
 	@varIDPersonaNueva INT,
 	@varIDRolNuevo INT,
+	@varIDAerolinea INT,
 	@varEstadoNuevo BIT
 
 	AS 
 	UPDATE Tbl_Personal
-	SET ID_Persona=@varIDPersonaNueva, ID_Rol=@varIDRolNuevo, Estado=@varEstadoNuevo
+	SET ID_Persona=@varIDPersonaNueva, ID_Rol=@varIDRolNuevo, ID_Aerolinea=@varIDAerolinea, Estado=@varEstadoNuevo
 	WHERE ID_Persona=@varIDPersonaAnterior
 GO
 
 --Delete
+--Eliminar un registro de la tabla Personal_Vuelo
 CREATE PROCEDURE dbo.STP_Personal_Vuelo_DLT
 	@varIDPersonal INT,
 	@varIDVuelo INT
@@ -674,12 +678,13 @@ GO
 EXEC dbo.STP_Personal_Vuelo_SLTALL
 GO
 --Seleccionar todos los registros de la tabla personal
-CREATE PROCEDURE dbo.STP_Personal_SLTALL
+ALTER PROCEDURE dbo.STP_Personal_SLTALL
 	
 	AS
-	SELECT PL.ID_Persona, P.Nombre, P.Apellido, PL.Estado FROM TbL_Personal AS PL
+	SELECT P.Nombre, P.Apellido, AE.Nombre AS Aerolinea,PL.Estado FROM TbL_Personal AS PL
 	INNER JOIN Tbl_Persona AS  P ON PL.ID_Persona=P.ID_Persona
 	INNER JOIN Tbl_Rol AS R ON PL.ID_Rol=R.ID_Rol
+	INNER JOIN Tbl_Aerolinea AS AE ON PL.ID_Aerolinea=AE.ID_Aerolinea
 GO
 EXEC dbo.STP_Personal_SLTALL
 GO
@@ -796,42 +801,45 @@ GO
 EXEC dbo.STP_Identificacion_SLTALL
 GO
 --Seleccionar un registro de al tabla personal
-CREATE PROCEDURE dbo.STP_Personal_SLTONE
+ALTER PROCEDURE dbo.STP_Personal_SLTONE
 	@varNombrePersona VARCHAR(40),
 	@varApellidoPersona VARCHAR(40)
 	AS
-	SELECT PL.ID_Persona, P.Nombre, P.Apellido, PL.Estado FROM TbL_Personal AS PL
+	SELECT  P.Nombre, P.Apellido, PL.Estado, AE.Nombre AS Aerolinea FROM TbL_Personal AS PL
 	INNER JOIN Tbl_Persona AS  P ON PL.ID_Persona=P.ID_Persona
 	INNER JOIN Tbl_Rol AS R ON PL.ID_Rol=R.ID_Rol
+	INNER JOIN Tbl_Aerolinea AS AE ON PL.ID_Aerolinea=AE.ID_Aerolinea
 	WHERE P.Nombre=@varNombrePersona AND P.Apellido=@varApellidoPersona
 GO
 EXEC dbo.STP_Personal_SLTONE 'Emil', 'Payano'
 GO
 --Seleccionar un registro de la tabla Personal_Vuelo
-CREATE PROCEDURE dbo.STP_Personal_Vuelo_SLTONE
+ALTER PROCEDURE dbo.STP_Personal_Vuelo_SLTONE
 	@varNombrePersonal VARCHAR(40),
 	@varApellidoPersonal VARCHAR(40)
 	
 
 	AS
-	SELECT P.Nombre, P.Apellido, PV.ID_Vuelo AS Vuelo FROM Tbl_Personal_Vuelo AS PV
+	SELECT P.Nombre, P.Apellido, PV.ID_Vuelo AS Vuelo, AE.Nombre AS Aerolinea FROM Tbl_Personal_Vuelo AS PV
 	INNER JOIN Tbl_Personal AS  PR ON PV.ID_Personal=PR.ID_Personal
 	INNER JOIN Tbl_Persona AS  P ON PR.ID_Persona=P.ID_Persona
+	INNER JOIN Tbl_Aerolinea AS AE ON PR.ID_Aerolinea=AE.ID_Aerolinea
 
 	WHERE P.Nombre=@varNombrePersonal  AND P.Apellido=@varApellidoPersonal
 GO
 EXEC dbo.STP_Personal_Vuelo_SLTONE 'Emil','Payano'
 GO
 --Selecciona un registro de la tabla logpersonal
-CREATE PROCEDURE dbo.STP_LogPersonal_SLTONE
+ALTER PROCEDURE dbo.STP_LogPersonal_SLTONE
 	@varNombrePersonal VARCHAR(40),
 	@varApellidoPersonal VARCHAR(40)
 	
 	AS
-	SELECT PR.Nombre, PR.Apellido, R.Tipo AS Rol, LP.FechaDeEntrada, LP.FechaDeSalida FROM Tbl_LogPersonal AS LP
+	SELECT PR.Nombre, PR.Apellido, R.Tipo AS Rol, LP.FechaDeEntrada, LP.FechaDeSalida, AE.Nombre AS Aerolinea FROM Tbl_LogPersonal AS LP
 	INNER JOIN Tbl_Personal AS P ON LP.ID_Personal=P.ID_Personal
 	INNER JOIN Tbl_Persona AS PR ON P.ID_Persona=PR.ID_Persona
 	INNER JOIN Tbl_Rol AS R ON P.ID_Rol=R.ID_Rol
+	INNER JOIN Tbl_Aerolinea AS AE ON P.ID_Aerolinea=AE.ID_Aerolinea
 	WHERE PR.Nombre=@varNombrePersonal AND PR.Apellido=@varApellidoPersonal
 GO
 EXEC dbo.STP_LogPersonal_SLTONE 'Emil','Payano'
@@ -1046,3 +1054,14 @@ CREATE PROCEDURE dbo.STP_AeropuertoPorPais_SLT
 	WHERE P.Nombre=@varNombrePais
 GO
 EXEC dbo.STP_AeropuertoPorPais_SLT 'Estados Unidos'
+--Listar Personal por aerolinea
+CREATE PROCEDURE dbo.STP_PersonalPorAerolinea_SLT
+	@varAerolineaNombre VARCHAR(40)
+	AS
+	SELECT P.Nombre, P.Apellido, AE.Nombre AS Aerolinea,PL.Estado FROM TbL_Personal AS PL
+	INNER JOIN Tbl_Persona AS  P ON PL.ID_Persona=P.ID_Persona
+	INNER JOIN Tbl_Rol AS R ON PL.ID_Rol=R.ID_Rol
+	INNER JOIN Tbl_Aerolinea AS AE ON PL.ID_Aerolinea=AE.ID_Aerolinea
+	WHERE AE.Nombre=@varAerolineaNombre
+GO
+EXEC dbo.STP_PersonalPorAerolinea_SLT 'United Airlines'
