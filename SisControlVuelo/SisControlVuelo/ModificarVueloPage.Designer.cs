@@ -36,30 +36,32 @@ namespace SisControlVuelo
             this.btn_Modificar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.tbx_CambioCampo = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(148, 66);
+            this.label1.Location = new System.Drawing.Point(130, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 20);
+            this.label1.Size = new System.Drawing.Size(100, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Numero de Vuelo";
             // 
             // tbx_IdVuelo
             // 
-            this.tbx_IdVuelo.Location = new System.Drawing.Point(148, 89);
+            this.tbx_IdVuelo.Location = new System.Drawing.Point(130, 67);
+            this.tbx_IdVuelo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbx_IdVuelo.Name = "tbx_IdVuelo";
-            this.tbx_IdVuelo.Size = new System.Drawing.Size(280, 27);
+            this.tbx_IdVuelo.Size = new System.Drawing.Size(246, 23);
             this.tbx_IdVuelo.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(148, 160);
+            this.label2.Location = new System.Drawing.Point(130, 120);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 20);
+            this.label2.Size = new System.Drawing.Size(109, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Campo a Modificar";
             // 
@@ -73,16 +75,18 @@ namespace SisControlVuelo
             "Hora Salida",
             "Hora Entrada",
             "Aerolinea"});
-            this.cbx_Campos.Location = new System.Drawing.Point(148, 183);
+            this.cbx_Campos.Location = new System.Drawing.Point(130, 137);
+            this.cbx_Campos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbx_Campos.Name = "cbx_Campos";
-            this.cbx_Campos.Size = new System.Drawing.Size(280, 28);
+            this.cbx_Campos.Size = new System.Drawing.Size(246, 23);
             this.cbx_Campos.TabIndex = 3;
             // 
             // btn_Modificar
             // 
-            this.btn_Modificar.Location = new System.Drawing.Point(211, 350);
+            this.btn_Modificar.Location = new System.Drawing.Point(185, 262);
+            this.btn_Modificar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Modificar.Name = "btn_Modificar";
-            this.btn_Modificar.Size = new System.Drawing.Size(126, 30);
+            this.btn_Modificar.Size = new System.Drawing.Size(110, 22);
             this.btn_Modificar.TabIndex = 4;
             this.btn_Modificar.Text = "Modificar";
             this.btn_Modificar.UseVisualStyleBackColor = true;
@@ -91,24 +95,35 @@ namespace SisControlVuelo
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(148, 254);
+            this.label3.Location = new System.Drawing.Point(130, 190);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 20);
+            this.label3.Size = new System.Drawing.Size(101, 15);
             this.label3.TabIndex = 5;
             this.label3.Text = "Cambio a Realizar";
             // 
             // tbx_CambioCampo
             // 
-            this.tbx_CambioCampo.Location = new System.Drawing.Point(148, 277);
+            this.tbx_CambioCampo.Location = new System.Drawing.Point(130, 208);
+            this.tbx_CambioCampo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbx_CambioCampo.Name = "tbx_CambioCampo";
-            this.tbx_CambioCampo.Size = new System.Drawing.Size(280, 27);
+            this.tbx_CambioCampo.Size = new System.Drawing.Size(246, 23);
             this.tbx_CambioCampo.TabIndex = 6;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(35, 137);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 60);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // ModificarVueloPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(591, 490);
+            this.ClientSize = new System.Drawing.Size(517, 405);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tbx_CambioCampo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_Modificar);
@@ -117,6 +132,7 @@ namespace SisControlVuelo
             this.Controls.Add(this.tbx_IdVuelo);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ModificarVueloPage";
             this.Text = "ModificarVueloPage";
             this.Load += new System.EventHandler(this.ModificarVueloPage_Load);
@@ -134,5 +150,6 @@ namespace SisControlVuelo
         private System.Windows.Forms.Button btn_Modificar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbx_CambioCampo;
+        private System.Windows.Forms.Button button1;
     }
 }
