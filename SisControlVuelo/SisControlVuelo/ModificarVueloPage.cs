@@ -11,13 +11,6 @@ namespace SisControlVuelo
 {
     public partial class ModificarVueloPage : Form
     {
-        int FlightId;
-        string nombre; 
-        string nombre1;
-        string familia;
-        string serie;
-        DateTime FechaEntrada;
-        DateTime FechaSalida;
 
         public ModificarVueloPage()
         {
