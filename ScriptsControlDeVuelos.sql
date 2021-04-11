@@ -178,12 +178,12 @@ EXEC dbo.STP_Rol_INS 'Piloto'
 
 GO
 --Insertar un registro en la tabla Pais
-CREATE PROCEDURE dbo.STP_Pais_INS
+ALTER PROCEDURE dbo.STP_Pais_INS
 	@Nombre VARCHAR(40)
 
 	AS 
 
-	INSERT INTO TBL_Pais(Nombre) VALUES (@Nombre)
+	INSERT INTO Tbl_Pais(Nombre) VALUES (@Nombre)
 GO
 EXEC DBO.STP_Pais_INS 'Estados Unidos'
 EXEC DBO.STP_Pais_INS 'Brazil'
