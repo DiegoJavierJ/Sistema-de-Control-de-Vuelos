@@ -27,5 +27,10 @@ namespace SisControlVuelo
         {
 
         }
+
+        private void Tbox_BuscarVuelo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

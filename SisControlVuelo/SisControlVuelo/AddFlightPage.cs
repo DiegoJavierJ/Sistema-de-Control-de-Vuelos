@@ -153,7 +153,7 @@ namespace SisControlVuelo
             this.Cbox_AeropuertoS.FormattingEnabled = true;
             this.Cbox_AeropuertoS.Items.AddRange(new object[] {
             "1",
-            "2"});
+            "6"});
             this.Cbox_AeropuertoS.Location = new System.Drawing.Point(105, 203);
             this.Cbox_AeropuertoS.Name = "Cbox_AeropuertoS";
             this.Cbox_AeropuertoS.Size = new System.Drawing.Size(156, 28);
@@ -164,7 +164,7 @@ namespace SisControlVuelo
             this.Cbox_AeropuertoE.FormattingEnabled = true;
             this.Cbox_AeropuertoE.Items.AddRange(new object[] {
             "1",
-            "2"});
+            "6"});
             this.Cbox_AeropuertoE.Location = new System.Drawing.Point(300, 203);
             this.Cbox_AeropuertoE.Name = "Cbox_AeropuertoE";
             this.Cbox_AeropuertoE.Size = new System.Drawing.Size(156, 28);
