@@ -181,7 +181,6 @@ namespace SisControlVuelo
             this.btn_CambiarCuenta.TabIndex = 10;
             this.btn_CambiarCuenta.Text = "Cambiar cuenta";
             this.btn_CambiarCuenta.UseVisualStyleBackColor = true;
-            this.btn_CambiarCuenta.Click += new System.EventHandler(this.btn_CambiarCuenta_Click);
             // 
             // Panel_InfoSCV
             // 
