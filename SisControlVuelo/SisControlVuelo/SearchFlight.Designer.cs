@@ -39,33 +39,38 @@ namespace SisControlVuelo
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(134, 87);
+            this.label1.Location = new System.Drawing.Point(153, 116);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 15);
+            this.label1.Size = new System.Drawing.Size(211, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Introduzca el codigo del vuelo";
             // 
             // Tbox_BuscarVuelo
             // 
-            this.Tbox_BuscarVuelo.Location = new System.Drawing.Point(306, 84);
+            this.Tbox_BuscarVuelo.Location = new System.Drawing.Point(350, 112);
+            this.Tbox_BuscarVuelo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Tbox_BuscarVuelo.Name = "Tbox_BuscarVuelo";
-            this.Tbox_BuscarVuelo.Size = new System.Drawing.Size(191, 23);
+            this.Tbox_BuscarVuelo.Size = new System.Drawing.Size(218, 27);
             this.Tbox_BuscarVuelo.TabIndex = 1;
+            this.Tbox_BuscarVuelo.TextChanged += new System.EventHandler(this.Tbox_BuscarVuelo_TextChanged);
             // 
             // DGridView_BuscarVuelo
             // 
             this.DGridView_BuscarVuelo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGridView_BuscarVuelo.Location = new System.Drawing.Point(134, 122);
+            this.DGridView_BuscarVuelo.Location = new System.Drawing.Point(153, 163);
+            this.DGridView_BuscarVuelo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DGridView_BuscarVuelo.Name = "DGridView_BuscarVuelo";
+            this.DGridView_BuscarVuelo.RowHeadersWidth = 51;
             this.DGridView_BuscarVuelo.RowTemplate.Height = 25;
-            this.DGridView_BuscarVuelo.Size = new System.Drawing.Size(363, 150);
+            this.DGridView_BuscarVuelo.Size = new System.Drawing.Size(415, 200);
             this.DGridView_BuscarVuelo.TabIndex = 2;
             // 
             // Btn_Buscar
             // 
-            this.Btn_Buscar.Location = new System.Drawing.Point(422, 278);
+            this.Btn_Buscar.Location = new System.Drawing.Point(482, 371);
+            this.Btn_Buscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Btn_Buscar.Name = "Btn_Buscar";
-            this.Btn_Buscar.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Buscar.Size = new System.Drawing.Size(86, 31);
             this.Btn_Buscar.TabIndex = 3;
             this.Btn_Buscar.Text = "Buscar";
             this.Btn_Buscar.UseVisualStyleBackColor = true;
@@ -73,14 +78,15 @@ namespace SisControlVuelo
             // 
             // SearchFlight
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(914, 600);
             this.Controls.Add(this.Btn_Buscar);
             this.Controls.Add(this.DGridView_BuscarVuelo);
             this.Controls.Add(this.Tbox_BuscarVuelo);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "SearchFlight";
             this.Text = "SearchFlight";
             this.Load += new System.EventHandler(this.SearchFlight_Load);

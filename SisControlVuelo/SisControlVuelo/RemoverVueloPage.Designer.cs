@@ -58,6 +58,7 @@ namespace SisControlVuelo
             this.btn_RemoverVuelo.TabIndex = 2;
             this.btn_RemoverVuelo.Text = "Remover";
             this.btn_RemoverVuelo.UseVisualStyleBackColor = true;
+            this.btn_RemoverVuelo.Click += new System.EventHandler(this.btn_RemoverVuelo_Click);
             // 
             // RemoverVueloPage
             // 
