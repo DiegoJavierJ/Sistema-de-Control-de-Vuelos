@@ -93,5 +93,18 @@ namespace SisControlVuelo
             this.Panel_InfoSCV.Controls.Add(addAirlinePage);
             addAirlinePage.Show();
         }
+
+        private void btn_CambiarCuenta_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_ControlDePersonal_Click(object sender, EventArgs e)
+        {
+            this.Panel_InfoSCV.Controls.Clear();
+            ControlPersonalPage addControlPersonalPage = new ControlPersonalPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.Panel_InfoSCV.Controls.Add(addControlPersonalPage);
+            addControlPersonalPage.Show();
+        }
     }
 }
