@@ -56,7 +56,7 @@ namespace SisControlVuelo
             this.label_Avion.AutoSize = true;
             this.label_Avion.Location = new System.Drawing.Point(105, 45);
             this.label_Avion.Name = "label_Avion";
-            this.label_Avion.Size = new System.Drawing.Size(47, 20);
+            this.label_Avion.Size = new System.Drawing.Size(38, 15);
             this.label_Avion.TabIndex = 0;
             this.label_Avion.Text = "Avion";
             // 
@@ -65,7 +65,7 @@ namespace SisControlVuelo
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(105, 169);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 20);
+            this.label2.Size = new System.Drawing.Size(117, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "Aeropuerto de Salida";
             // 
@@ -74,7 +74,7 @@ namespace SisControlVuelo
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(300, 169);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 20);
+            this.label3.Size = new System.Drawing.Size(126, 15);
             this.label3.TabIndex = 0;
             this.label3.Text = "Aeropuerto de Entrada";
             // 
@@ -83,7 +83,7 @@ namespace SisControlVuelo
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(105, 107);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 20);
+            this.label4.Size = new System.Drawing.Size(88, 15);
             this.label4.TabIndex = 0;
             this.label4.Text = "Fecha de Salida";
             // 
@@ -92,7 +92,7 @@ namespace SisControlVuelo
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(300, 107);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 20);
+            this.label5.Size = new System.Drawing.Size(98, 15);
             this.label5.TabIndex = 0;
             this.label5.Text = "Fecha de Llegada";
             // 
@@ -100,7 +100,7 @@ namespace SisControlVuelo
             // 
             this.Tbox_Avion.Location = new System.Drawing.Point(105, 72);
             this.Tbox_Avion.Name = "Tbox_Avion";
-            this.Tbox_Avion.Size = new System.Drawing.Size(156, 27);
+            this.Tbox_Avion.Size = new System.Drawing.Size(156, 23);
             this.Tbox_Avion.TabIndex = 1;
             this.Tbox_Avion.TextChanged += new System.EventHandler(this.Tbox_Avion_TextChanged);
             // 
@@ -108,14 +108,14 @@ namespace SisControlVuelo
             // 
             this.Tbox_HoraSalida.Location = new System.Drawing.Point(105, 134);
             this.Tbox_HoraSalida.Name = "Tbox_HoraSalida";
-            this.Tbox_HoraSalida.Size = new System.Drawing.Size(156, 27);
+            this.Tbox_HoraSalida.Size = new System.Drawing.Size(156, 23);
             this.Tbox_HoraSalida.TabIndex = 1;
             // 
             // Tbox_HoraLlegada
             // 
             this.Tbox_HoraLlegada.Location = new System.Drawing.Point(300, 130);
             this.Tbox_HoraLlegada.Name = "Tbox_HoraLlegada";
-            this.Tbox_HoraLlegada.Size = new System.Drawing.Size(156, 27);
+            this.Tbox_HoraLlegada.Size = new System.Drawing.Size(156, 23);
             this.Tbox_HoraLlegada.TabIndex = 1;
             // 
             // Btn_Agregar
@@ -133,7 +133,7 @@ namespace SisControlVuelo
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(300, 45);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 20);
+            this.label6.Size = new System.Drawing.Size(57, 15);
             this.label6.TabIndex = 3;
             this.label6.Text = "Aerolinea";
             // 
@@ -145,7 +145,7 @@ namespace SisControlVuelo
             "2"});
             this.Cbox_Aerolinea.Location = new System.Drawing.Point(300, 72);
             this.Cbox_Aerolinea.Name = "Cbox_Aerolinea";
-            this.Cbox_Aerolinea.Size = new System.Drawing.Size(156, 28);
+            this.Cbox_Aerolinea.Size = new System.Drawing.Size(156, 23);
             this.Cbox_Aerolinea.TabIndex = 4;
             // 
             // Cbox_AeropuertoS
@@ -156,7 +156,7 @@ namespace SisControlVuelo
             "6"});
             this.Cbox_AeropuertoS.Location = new System.Drawing.Point(105, 203);
             this.Cbox_AeropuertoS.Name = "Cbox_AeropuertoS";
-            this.Cbox_AeropuertoS.Size = new System.Drawing.Size(156, 28);
+            this.Cbox_AeropuertoS.Size = new System.Drawing.Size(156, 23);
             this.Cbox_AeropuertoS.TabIndex = 5;
             // 
             // Cbox_AeropuertoE
@@ -167,7 +167,7 @@ namespace SisControlVuelo
             "6"});
             this.Cbox_AeropuertoE.Location = new System.Drawing.Point(300, 203);
             this.Cbox_AeropuertoE.Name = "Cbox_AeropuertoE";
-            this.Cbox_AeropuertoE.Size = new System.Drawing.Size(156, 28);
+            this.Cbox_AeropuertoE.Size = new System.Drawing.Size(156, 23);
             this.Cbox_AeropuertoE.TabIndex = 6;
             // 
             // Estado
@@ -175,7 +175,7 @@ namespace SisControlVuelo
             this.Estado.AutoSize = true;
             this.Estado.Location = new System.Drawing.Point(105, 247);
             this.Estado.Name = "Estado";
-            this.Estado.Size = new System.Drawing.Size(54, 20);
+            this.Estado.Size = new System.Drawing.Size(42, 15);
             this.Estado.TabIndex = 7;
             this.Estado.Text = "Estado";
             // 
@@ -183,7 +183,7 @@ namespace SisControlVuelo
             // 
             this.tbx_Estado.Location = new System.Drawing.Point(105, 270);
             this.tbx_Estado.Name = "tbx_Estado";
-            this.tbx_Estado.Size = new System.Drawing.Size(156, 27);
+            this.tbx_Estado.Size = new System.Drawing.Size(156, 23);
             this.tbx_Estado.TabIndex = 8;
             // 
             // label1
@@ -191,7 +191,7 @@ namespace SisControlVuelo
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(300, 247);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 20);
+            this.label1.Size = new System.Drawing.Size(46, 15);
             this.label1.TabIndex = 9;
             this.label1.Text = "Codigo";
             // 
@@ -199,7 +199,7 @@ namespace SisControlVuelo
             // 
             this.tbx_Codigo.Location = new System.Drawing.Point(300, 270);
             this.tbx_Codigo.Name = "tbx_Codigo";
-            this.tbx_Codigo.Size = new System.Drawing.Size(156, 27);
+            this.tbx_Codigo.Size = new System.Drawing.Size(156, 23);
             this.tbx_Codigo.TabIndex = 10;
             // 
             // AddFlightPage
@@ -224,6 +224,7 @@ namespace SisControlVuelo
             this.Controls.Add(this.label_Avion);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddFlightPage";
+            this.Load += new System.EventHandler(this.AddFlightPage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,6 +259,11 @@ namespace SisControlVuelo
         }
 
         private void Tbox_Avion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddFlightPage_Load(object sender, EventArgs e)
         {
 
         }
