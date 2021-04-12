@@ -693,7 +693,7 @@ GO
 ALTER PROCEDURE dbo.STP_Vuelo_SLTALL
 	
 	AS
-	SELECT V.ID_Vuelo,V.Codigo AS Vuelo, A.Familia AS Avion, A.Familia, A.Serie, AE.Nombre AS Aerolinea, AER.Nombre AS AeropuertoSalida, AER2.Nombre AS AeropuertoLlegada, V.FechaSalida, V.FechaLLegada FROM TBL_Vuelo AS V
+	SELECT V.ID_Vuelo,V.Codigo AS Vuelo, A.Familia AS Avion, A.Familia, A.Serie, AE.Nombre AS Aerolinea, AER.Nombre AS AeropuertoSalida, AER2.Nombre AS AeropuertoLlegada, V.FechaSalida, V.FechaLLegada, V.Estado FROM TBL_Vuelo AS V
 	INNER JOIN Tbl_Avion AS A ON V.ID_Avion=A.ID_Avion
 	INNER JOIN Tbl_Aerolinea AS AE ON V.ID_Aerolinea=AE.ID_Aerolinea
 	INNER JOIN Tbl_Aeropuerto AS AER ON V.ID_AeropuertoSalida=AER.ID_Aeropuerto
