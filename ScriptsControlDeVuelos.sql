@@ -292,6 +292,7 @@ CREATE PROCEDURE dbo.STP_Vuelo_INS
 GO
 EXEC dbo.STP_Vuelo_INS 'AILN-1',1,1,1,1,'4/7/2021','4/8/2021',1
 EXEC dbo.STP_Vuelo_INS 'BA2490',2,2,2,2,'4/10/2021','4/11/2021',2
+
 GO
 
 --Insertar un registro en la tabla personal
@@ -692,7 +693,7 @@ GO
 ALTER PROCEDURE dbo.STP_Vuelo_SLTALL
 	
 	AS
-	SELECT V.ID_Vuelo,V.Codigo AS Vuelo, A.Familia AS Avion, A.Familia, A.Serie, AE.Nombre, AER.Nombre AS AeropuertoSalida, AER2.Nombre AS AeropuertoLlegada, V.FechaSalida, V.FechaLLegada FROM TBL_Vuelo AS V
+	SELECT V.ID_Vuelo,V.Codigo AS Vuelo, A.Familia AS Avion, A.Familia, A.Serie, AE.Nombre AS Aerolinea, AER.Nombre AS AeropuertoSalida, AER2.Nombre AS AeropuertoLlegada, V.FechaSalida, V.FechaLLegada, V.Estado FROM TBL_Vuelo AS V
 	INNER JOIN Tbl_Avion AS A ON V.ID_Avion=A.ID_Avion
 	INNER JOIN Tbl_Aerolinea AS AE ON V.ID_Aerolinea=AE.ID_Aerolinea
 	INNER JOIN Tbl_Aeropuerto AS AER ON V.ID_AeropuertoSalida=AER.ID_Aeropuerto
@@ -1021,11 +1022,11 @@ EXEC dbo.STP_VuelosPorAerolinea_SLT 'Tatakae Airlines'
 GO
 
 --Listar todos los vuelos por aeropuerto y por aerolinea
-CREATE PROCEDURE dbo.STP_VuelosPorAeropuertoPorAerolinea_SLT
+ALTER PROCEDURE dbo.STP_VuelosPorAeropuertoPorAerolinea_SLT
 	@varNombreAeropuerto VARCHAR(100),
 	@varNombreAerolinea VARCHAR(40)
 	AS
-	SELECT V.ID_Vuelo,V.Codigo, AE.Nombre, A.Familia, A.Serie, AE.Nombre, AER.Nombre AS AeropuertoSalida, AER2.Nombre AS AeropuertoLlegada, V.FechaSalida, V.FechaLLegada FROM TBL_Vuelo AS V
+	SELECT V.ID_Vuelo,V.Codigo AS Vuelo, AE.Nombre, A.Familia, A.Serie, AE.Nombre, AER.Nombre AS AeropuertoSalida, AER2.Nombre AS AeropuertoLlegada, V.FechaSalida, V.FechaLLegada FROM TBL_Vuelo AS V
 	INNER JOIN Tbl_Avion AS A ON V.ID_Avion=A.ID_Avion
 	INNER JOIN Tbl_Aerolinea AS AE ON V.ID_Aerolinea=AE.ID_Aerolinea
 	INNER JOIN Tbl_Aeropuerto AS AER ON V.ID_AeropuertoSalida=AER.ID_Aeropuerto
@@ -1035,13 +1036,13 @@ GO
 EXEC dbo.STP_VuelosPorAeropuertoPorAerolinea_SLT 'Aeropuerto Internacional Libertad de Newark', 'United Airlines'
 GO
 --Listar todos los vuelos por aeropuerto, por aerolinea y entre fechas
-CREATE PROCEDURE dbo.STP_VuelosPorAeropuertoPorAerolineaEntreFechas_SLT
+ALTER PROCEDURE dbo.STP_VuelosPorAeropuertoPorAerolineaEntreFechas_SLT
 	@varNombreAeropuerto VARCHAR(100),
 	@varNombreAerolinea VARCHAR(40),
 	@varFecha1 DATE,
 	@varFecha2 DATE
 	AS
-	SELECT V.ID_Vuelo,V.Codigo, AE.Nombre AS Aerolinea, A.Familia, A.Serie, AER.Nombre AS AeropuertoSalida, AER2.Nombre AS AeropuertoLlegada, V.FechaSalida, V.FechaLLegada FROM TBL_Vuelo AS V
+	SELECT V.ID_Vuelo,V.Codigo AS Vuelo, AE.Nombre AS Aerolinea, A.Familia, A.Serie, AER.Nombre AS AeropuertoSalida, AER2.Nombre AS AeropuertoLlegada, V.FechaSalida, V.FechaLLegada FROM TBL_Vuelo AS V
 	INNER JOIN Tbl_Avion AS A ON V.ID_Avion=A.ID_Avion
 	INNER JOIN Tbl_Aerolinea AS AE ON V.ID_Aerolinea=AE.ID_Aerolinea
 	INNER JOIN Tbl_Aeropuerto AS AER ON V.ID_AeropuertoSalida=AER.ID_Aeropuerto
