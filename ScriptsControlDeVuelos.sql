@@ -1005,6 +1005,21 @@ CREATE PROCEDURE dbo.STP_VuelosPorAeropuerto_SLT
 GO
 EXEC dbo.STP_VuelosPorAeropuerto_SLT 'Aeropuerto Internacional Libertad de Newark'
 GO
+--Listar todos los vuelos por aerolinea
+CREATE PROCEDURE dbo.STP_VuelosPorAerolinea_SLT
+	@varNombreAerolinea VARCHAR(100)
+
+	AS
+	SELECT V.ID_Vuelo,V.Codigo, AE.Nombre, A.Familia, A.Serie, AE.Nombre, AER.Nombre AS AeropuertoSalida, AER2.Nombre AS AeropuertoLlegada, V.FechaSalida, V.FechaLLegada FROM TBL_Vuelo AS V
+	INNER JOIN Tbl_Avion AS A ON V.ID_Avion=A.ID_Avion
+	INNER JOIN Tbl_Aerolinea AS AE ON V.ID_Aerolinea=AE.ID_Aerolinea
+	INNER JOIN Tbl_Aeropuerto AS AER ON V.ID_AeropuertoSalida=AER.ID_Aeropuerto
+	INNER JOIN Tbl_Aeropuerto AS AER2 ON V.ID_AeropuertoLlegada=AER2.ID_Aeropuerto
+	WHERE AE.Nombre=@varNombreAerolinea
+GO
+EXEC dbo.STP_VuelosPorAerolinea_SLT 'Tatakae Airlines'
+GO
+
 --Listar todos los vuelos por aeropuerto y por aerolinea
 CREATE PROCEDURE dbo.STP_VuelosPorAeropuertoPorAerolinea_SLT
 	@varNombreAeropuerto VARCHAR(100),

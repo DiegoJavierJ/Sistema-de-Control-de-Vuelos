@@ -41,62 +41,67 @@ namespace SisControlVuelo
             // DGridView_HistorialVuelos
             // 
             this.DGridView_HistorialVuelos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGridView_HistorialVuelos.Location = new System.Drawing.Point(23, 71);
+            this.DGridView_HistorialVuelos.Location = new System.Drawing.Point(26, 95);
+            this.DGridView_HistorialVuelos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DGridView_HistorialVuelos.Name = "DGridView_HistorialVuelos";
             this.DGridView_HistorialVuelos.RowHeadersWidth = 51;
             this.DGridView_HistorialVuelos.RowTemplate.Height = 25;
-            this.DGridView_HistorialVuelos.Size = new System.Drawing.Size(563, 260);
+            this.DGridView_HistorialVuelos.Size = new System.Drawing.Size(643, 347);
             this.DGridView_HistorialVuelos.TabIndex = 0;
             this.DGridView_HistorialVuelos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGridView_HistorialVuelos_CellContentClick);
             // 
             // Label_MostrarPorAeropuerto
             // 
             this.Label_MostrarPorAeropuerto.AutoSize = true;
-            this.Label_MostrarPorAeropuerto.Location = new System.Drawing.Point(23, 44);
+            this.Label_MostrarPorAeropuerto.Location = new System.Drawing.Point(26, 59);
             this.Label_MostrarPorAeropuerto.Name = "Label_MostrarPorAeropuerto";
-            this.Label_MostrarPorAeropuerto.Size = new System.Drawing.Size(132, 15);
+            this.Label_MostrarPorAeropuerto.Size = new System.Drawing.Size(167, 20);
             this.Label_MostrarPorAeropuerto.TabIndex = 8;
             this.Label_MostrarPorAeropuerto.Text = "Mostrar por Aeropuerto";
             // 
             // Tbox_MostrarPorAerolinea
             // 
-            this.Tbox_MostrarPorAerolinea.Location = new System.Drawing.Point(154, 41);
+            this.Tbox_MostrarPorAerolinea.Location = new System.Drawing.Point(500, 56);
+            this.Tbox_MostrarPorAerolinea.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Tbox_MostrarPorAerolinea.Name = "Tbox_MostrarPorAerolinea";
-            this.Tbox_MostrarPorAerolinea.Size = new System.Drawing.Size(149, 23);
+            this.Tbox_MostrarPorAerolinea.Size = new System.Drawing.Size(170, 27);
             this.Tbox_MostrarPorAerolinea.TabIndex = 11;
             this.Tbox_MostrarPorAerolinea.TextChanged += new System.EventHandler(this.Tbox_MostrarPorAerolinea_TextChanged);
             // 
             // Tbox_MostrarPorAeropuerto
             // 
-            this.Tbox_MostrarPorAeropuerto.Location = new System.Drawing.Point(437, 41);
+            this.Tbox_MostrarPorAeropuerto.Location = new System.Drawing.Point(177, 56);
+            this.Tbox_MostrarPorAeropuerto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Tbox_MostrarPorAeropuerto.Name = "Tbox_MostrarPorAeropuerto";
-            this.Tbox_MostrarPorAeropuerto.Size = new System.Drawing.Size(149, 23);
+            this.Tbox_MostrarPorAeropuerto.Size = new System.Drawing.Size(170, 27);
             this.Tbox_MostrarPorAeropuerto.TabIndex = 10;
             this.Tbox_MostrarPorAeropuerto.TextChanged += new System.EventHandler(this.Tbox_MostrarPorAeropuerto_TextChanged);
             // 
             // Label_MostrarPorAerolinea
             // 
             this.Label_MostrarPorAerolinea.AutoSize = true;
-            this.Label_MostrarPorAerolinea.Location = new System.Drawing.Point(309, 44);
+            this.Label_MostrarPorAerolinea.Location = new System.Drawing.Point(353, 59);
             this.Label_MostrarPorAerolinea.Name = "Label_MostrarPorAerolinea";
-            this.Label_MostrarPorAerolinea.Size = new System.Drawing.Size(122, 15);
+            this.Label_MostrarPorAerolinea.Size = new System.Drawing.Size(155, 20);
             this.Label_MostrarPorAerolinea.TabIndex = 12;
             this.Label_MostrarPorAerolinea.Text = "Mostrar por Aerolinea";
             // 
             // Btn_Buscar
             // 
-            this.Btn_Buscar.Location = new System.Drawing.Point(511, 337);
+            this.Btn_Buscar.Location = new System.Drawing.Point(584, 449);
+            this.Btn_Buscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Btn_Buscar.Name = "Btn_Buscar";
-            this.Btn_Buscar.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Buscar.Size = new System.Drawing.Size(86, 31);
             this.Btn_Buscar.TabIndex = 13;
             this.Btn_Buscar.Text = "Buscar";
             this.Btn_Buscar.UseVisualStyleBackColor = true;
+            this.Btn_Buscar.Click += new System.EventHandler(this.Btn_Buscar_Click);
             // 
             // HistorialVueloPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(914, 600);
             this.ControlBox = false;
             this.Controls.Add(this.Btn_Buscar);
             this.Controls.Add(this.Label_MostrarPorAerolinea);
@@ -105,6 +110,7 @@ namespace SisControlVuelo
             this.Controls.Add(this.Label_MostrarPorAeropuerto);
             this.Controls.Add(this.DGridView_HistorialVuelos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "HistorialVueloPage";

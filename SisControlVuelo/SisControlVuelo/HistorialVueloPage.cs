@@ -53,5 +53,28 @@ namespace SisControlVuelo
             DGridView_HistorialVuelos.DataSource = vuelo.GetFlight();
             DGridView_HistorialVuelos.DataMember = "Vuelo";
         }
+
+        private void Btn_Buscar_Click(object sender, EventArgs e)
+        {
+            if(Tbox_MostrarPorAerolinea.Text.Length == 0 && Tbox_MostrarPorAeropuerto.Text.Length != 0)
+            {
+                Flight vuelo = new Flight();
+                DGridView_HistorialVuelos.DataSource = vuelo.GetFlightByAirport(Tbox_MostrarPorAeropuerto.Text);
+                DGridView_HistorialVuelos.DataMember = "Vuelo";
+            }
+            else if(Tbox_MostrarPorAerolinea.Text.Length != 0 && Tbox_MostrarPorAeropuerto.Text.Length == 0)
+            {
+                Flight vuelo = new Flight();
+                DGridView_HistorialVuelos.DataSource = vuelo.GetFlightByAirline(Tbox_MostrarPorAerolinea.Text);
+                DGridView_HistorialVuelos.DataMember = "Vuelo";
+            }
+            else if (Tbox_MostrarPorAerolinea.Text.Length != 0 && Tbox_MostrarPorAeropuerto.Text.Length != 0)
+            {
+                Flight vuelo = new Flight();
+                DGridView_HistorialVuelos.DataSource = vuelo.GetFlightByAirportANDAirline(Tbox_MostrarPorAeropuerto.Text, Tbox_MostrarPorAerolinea.Text);
+                DGridView_HistorialVuelos.DataMember = "Vuelo";
+            }
+
+        }
     }
 }
