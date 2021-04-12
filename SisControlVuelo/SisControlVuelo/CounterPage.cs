@@ -73,14 +73,6 @@ namespace SisControlVuelo
             modificarVueloPage.Show();
         }
 
-        private void btn_CambiarCuenta_Click(object sender, EventArgs e)
-        {
-            LoginPage loginPage = new LoginPage();
-            this.Hide();
-            loginPage.ShowDialog();
-            this.Close();
-        }
-
         private void Panel_InfoSCV_Paint(object sender, PaintEventArgs e)
         {
 
