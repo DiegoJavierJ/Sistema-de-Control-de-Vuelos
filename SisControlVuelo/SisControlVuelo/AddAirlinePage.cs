@@ -29,8 +29,13 @@ namespace SisControlVuelo
 
             if(i != 0) 
             {
-                MessageBox.Show(i + "Data Saved");
+                MessageBox.Show(i + " Data Saved");
             }
+        }
+
+        private void AddAirlinePage_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

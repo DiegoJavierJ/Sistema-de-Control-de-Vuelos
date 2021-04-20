@@ -26,5 +26,13 @@ namespace SisControlVuelo
             DGridView_ControlPersonal.DataSource = personal.GetPersonal();
             DGridView_ControlPersonal.DataMember = "Personal";
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Personal personal = new Personal();
+            DGridView_ControlPersonal.DataSource = personal.SeachPersonByName(Tbox_Nombre.Text, Tbox_Apellido.Text);
+            DGridView_ControlPersonal.DataMember = "Personal";
+
+        }
     }
 }

@@ -36,7 +36,7 @@ namespace SisControlVuelo
 
             if (i != 0)
             {
-                MessageBox.Show(i + "Data Saved");
+                MessageBox.Show(i + " Data Saved");
             }
         }
 

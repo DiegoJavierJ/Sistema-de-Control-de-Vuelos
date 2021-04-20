@@ -91,6 +91,7 @@ namespace SisControlVuelo
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddAirlinePage";
             this.Text = "AddAirlinePage";
+            this.Load += new System.EventHandler(this.AddAirlinePage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

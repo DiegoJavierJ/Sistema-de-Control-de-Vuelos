@@ -21,5 +21,18 @@ namespace SisControlVuelo
             Adapt.Fill(dts);
             return dts;
         }
+        public DataSet SeachPersonByName(string name, string lastname)
+        {
+            SqlDataAdapter Adapt = new SqlDataAdapter();
+            Adapt.TableMappings.Add("Table", "personal");
+            SqlCommand comnd = new SqlCommand();
+            comnd.Connection = ConnectionClass.Connect();
+            comnd.CommandText = $"dbo.STP_Personal_Vuelo_SLTONE '{name}', '{lastname}'";
+            comnd.CommandType = CommandType.Text;
+            Adapt.SelectCommand = comnd;
+            DataSet dts = new DataSet("personal");
+            Adapt.Fill(dts);
+            return dts;
+        }
     }
 }

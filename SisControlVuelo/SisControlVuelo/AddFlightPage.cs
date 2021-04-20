@@ -16,13 +16,13 @@ namespace SisControlVuelo
         private TextBox Tbox_HoraLlegada;
         private Button Btn_Agregar;
         private Label label6;
-        private ComboBox Cbox_Aerolinea;
-        private ComboBox Cbox_AeropuertoS;
-        private ComboBox Cbox_AeropuertoE;
         private Label Estado;
         private TextBox tbx_Estado;
         private Label label1;
         private TextBox tbx_Codigo;
+        private TextBox Tbox_Aerolinea;
+        private TextBox Tbox_AeropuertoS;
+        private TextBox Tbox_AeropuertoE;
         private Label label_Avion;
 
         public AddFlightPage()
@@ -42,13 +42,13 @@ namespace SisControlVuelo
             this.Tbox_HoraLlegada = new System.Windows.Forms.TextBox();
             this.Btn_Agregar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.Cbox_Aerolinea = new System.Windows.Forms.ComboBox();
-            this.Cbox_AeropuertoS = new System.Windows.Forms.ComboBox();
-            this.Cbox_AeropuertoE = new System.Windows.Forms.ComboBox();
             this.Estado = new System.Windows.Forms.Label();
             this.tbx_Estado = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tbx_Codigo = new System.Windows.Forms.TextBox();
+            this.Tbox_Aerolinea = new System.Windows.Forms.TextBox();
+            this.Tbox_AeropuertoS = new System.Windows.Forms.TextBox();
+            this.Tbox_AeropuertoE = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label_Avion
@@ -137,39 +137,6 @@ namespace SisControlVuelo
             this.label6.TabIndex = 3;
             this.label6.Text = "Aerolinea";
             // 
-            // Cbox_Aerolinea
-            // 
-            this.Cbox_Aerolinea.FormattingEnabled = true;
-            this.Cbox_Aerolinea.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.Cbox_Aerolinea.Location = new System.Drawing.Point(300, 72);
-            this.Cbox_Aerolinea.Name = "Cbox_Aerolinea";
-            this.Cbox_Aerolinea.Size = new System.Drawing.Size(156, 23);
-            this.Cbox_Aerolinea.TabIndex = 4;
-            // 
-            // Cbox_AeropuertoS
-            // 
-            this.Cbox_AeropuertoS.FormattingEnabled = true;
-            this.Cbox_AeropuertoS.Items.AddRange(new object[] {
-            "1",
-            "6"});
-            this.Cbox_AeropuertoS.Location = new System.Drawing.Point(105, 203);
-            this.Cbox_AeropuertoS.Name = "Cbox_AeropuertoS";
-            this.Cbox_AeropuertoS.Size = new System.Drawing.Size(156, 23);
-            this.Cbox_AeropuertoS.TabIndex = 5;
-            // 
-            // Cbox_AeropuertoE
-            // 
-            this.Cbox_AeropuertoE.FormattingEnabled = true;
-            this.Cbox_AeropuertoE.Items.AddRange(new object[] {
-            "1",
-            "6"});
-            this.Cbox_AeropuertoE.Location = new System.Drawing.Point(300, 203);
-            this.Cbox_AeropuertoE.Name = "Cbox_AeropuertoE";
-            this.Cbox_AeropuertoE.Size = new System.Drawing.Size(156, 23);
-            this.Cbox_AeropuertoE.TabIndex = 6;
-            // 
             // Estado
             // 
             this.Estado.AutoSize = true;
@@ -202,16 +169,37 @@ namespace SisControlVuelo
             this.tbx_Codigo.Size = new System.Drawing.Size(156, 23);
             this.tbx_Codigo.TabIndex = 10;
             // 
+            // Tbox_Aerolinea
+            // 
+            this.Tbox_Aerolinea.Location = new System.Drawing.Point(300, 72);
+            this.Tbox_Aerolinea.Name = "Tbox_Aerolinea";
+            this.Tbox_Aerolinea.Size = new System.Drawing.Size(156, 23);
+            this.Tbox_Aerolinea.TabIndex = 11;
+            // 
+            // Tbox_AeropuertoS
+            // 
+            this.Tbox_AeropuertoS.Location = new System.Drawing.Point(105, 203);
+            this.Tbox_AeropuertoS.Name = "Tbox_AeropuertoS";
+            this.Tbox_AeropuertoS.Size = new System.Drawing.Size(156, 23);
+            this.Tbox_AeropuertoS.TabIndex = 12;
+            // 
+            // Tbox_AeropuertoE
+            // 
+            this.Tbox_AeropuertoE.Location = new System.Drawing.Point(300, 203);
+            this.Tbox_AeropuertoE.Name = "Tbox_AeropuertoE";
+            this.Tbox_AeropuertoE.Size = new System.Drawing.Size(156, 23);
+            this.Tbox_AeropuertoE.TabIndex = 13;
+            // 
             // AddFlightPage
             // 
             this.ClientSize = new System.Drawing.Size(591, 490);
+            this.Controls.Add(this.Tbox_AeropuertoE);
+            this.Controls.Add(this.Tbox_AeropuertoS);
+            this.Controls.Add(this.Tbox_Aerolinea);
             this.Controls.Add(this.tbx_Codigo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbx_Estado);
             this.Controls.Add(this.Estado);
-            this.Controls.Add(this.Cbox_AeropuertoE);
-            this.Controls.Add(this.Cbox_AeropuertoS);
-            this.Controls.Add(this.Cbox_Aerolinea);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.Btn_Agregar);
             this.Controls.Add(this.Tbox_HoraLlegada);
@@ -237,9 +225,9 @@ namespace SisControlVuelo
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@varCodigo", tbx_Codigo.Text);
             cmd.Parameters.AddWithValue("@varID_Avion", int.Parse(Tbox_Avion.Text));
-            cmd.Parameters.AddWithValue("@varID_Aerolinea", int.Parse(Cbox_Aerolinea.Text));
-            cmd.Parameters.AddWithValue("@varIDAeropuertoSalida", int.Parse(Cbox_AeropuertoS.Text));
-            cmd.Parameters.AddWithValue("@varIDAeropuertoLlegada", int.Parse(Cbox_AeropuertoE.Text));
+            cmd.Parameters.AddWithValue("@varID_Aerolinea", int.Parse(Tbox_Aerolinea.Text));
+            cmd.Parameters.AddWithValue("@varIDAeropuertoSalida", int.Parse(Tbox_AeropuertoS.Text));
+            cmd.Parameters.AddWithValue("@varIDAeropuertoLlegada", int.Parse(Tbox_AeropuertoE.Text));
             cmd.Parameters.AddWithValue("@FechaSalida", Tbox_HoraSalida.Text);
             cmd.Parameters.AddWithValue("@FechaLlegada", Tbox_HoraLlegada.Text);
             cmd.Parameters.AddWithValue("@Estado", tbx_Estado.Text);
@@ -249,7 +237,7 @@ namespace SisControlVuelo
 
             if(i != 0)
             {
-                MessageBox.Show(i + "Data Saved");
+                MessageBox.Show(i + " Data Saved");
             }
         }
 
@@ -264,6 +252,11 @@ namespace SisControlVuelo
         }
 
         private void AddFlightPage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cbox_Aerolinea_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
